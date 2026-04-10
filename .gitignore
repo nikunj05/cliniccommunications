@@ -1,0 +1,51 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Node / Build
+node_modules/
+dist/
+build/
+
+# Composer
+vendor/
+composer.lock
+
+# Env files
+.env
+.env.*
+
+# WordPress core (ignore if not tracking full core)
+wp-admin/
+wp-includes/
+
+# Uploads (user-generated content)
+wp-content/uploads/
+
+# Cache & backups
+wp-content/cache/
+wp-content/backup*
+wp-content/backups/
+wp-content/upgrade/
+
+# Plugins (keep if custom)
+wp-content/plugins/*
+!wp-content/plugins/your-custom-plugin/
+
+# Themes (keep if custom)
+wp-content/themes/*
+!wp-content/themes/clinic-communications/
+
+# Debug
+debug.log
+
+# IDE
+.vscode/
+.idea/
+
+# Database
+*.sql
+*.gz
