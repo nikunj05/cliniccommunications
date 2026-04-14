@@ -131,13 +131,6 @@ if ( ! $featured_img_url ) {
 	 <?php
 	 $about_clinic_communications_title = get_field( 'about_clinic_communications_title' );
 	 $about_clinic_communications_photo = get_field( 'about_clinic_communications_photo' );
-
-	 if ( ! $about_clinic_communications_title ) {
-		 $about_clinic_communications_title = 'A little <span class="font-style-italic">love note</span> from Maddie';
-	 }
-	 if ( ! $about_clinic_communications_photo ) {
-		 $about_clinic_communications_photo = get_template_directory_uri() . '/assets/images/love-note-section-image.jpg';
-	 }
 	 ?>
 	<section class="love-note-section section-space-tb">
 		<div class="container">

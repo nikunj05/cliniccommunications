@@ -1926,6 +1926,10 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   .container {
     max-width: 1200px;
   }
+
+  .footer .container {
+    max-width: 1340px;
+  }
 }
 @media (max-width: 1199.55px) {
   .header .navbar-nav .nav-item {

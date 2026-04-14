@@ -341,3 +341,9 @@ function clinic_communications_fix_svg() {
 	</style>';
 }
 add_action( 'admin_head', 'clinic_communications_fix_svg' );
+
+function allow_svg_uploads($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter('upload_mimes', 'allow_svg_uploads');
