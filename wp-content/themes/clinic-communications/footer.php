@@ -12,12 +12,14 @@
               <img src="<?php echo esc_url( $logo_src ); ?>" alt="<?php bloginfo( 'name' ); ?>" width="180">
             </a>
           </div>
-          <ul class="footer-nav-links">
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#services">SERVICES</a></li>
-            <li><a href="#">CONTACT</a></li>
-            <li><a href="#">BOOK A CALL</a></li>
-          </ul>
+          <?php
+          wp_nav_menu( array(
+            'theme_location' => 'footer-menu',
+            'container'      => false,
+            'menu_class'     => 'footer-nav-links',
+            'fallback_cb'    => false,
+          ) );
+          ?>
           <div class="footer-social-links">
             <?php
             $active_socials = clinic_communications_get_active_social_links();
@@ -32,12 +34,10 @@
       <div class="footer-bottom">
         <div class="footer-acknowledgement">
           <p class="ack-text">
-            Clinic Communications acknowledges and pays respect to the Gadigal,<br>
-            Cammeraygal and Gweagal people on the lands in which we work.
+            <?php echo wp_kses_post( get_theme_mod( 'clinic_communications_ack_text_1', 'Clinic Communications acknowledges and pays respect to the Gadigal,<br> Cammeraygal and Gweagal people on the lands in which we work.' ) ); ?>
           </p>
           <p class="ack-text">
-            Clinic Communications acknowledges we are working on stolen<br>
-            lands and that sovereignty has not been ceded.
+            <?php echo wp_kses_post( get_theme_mod( 'clinic_communications_ack_text_2', 'Clinic Communications acknowledges we are working on stolen<br> lands and that sovereignty has not been ceded.' ) ); ?>
           </p>
         </div>
       </div>

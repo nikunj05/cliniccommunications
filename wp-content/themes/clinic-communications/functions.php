@@ -25,7 +25,8 @@ if ( ! function_exists( 'clinic_communications_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'clinic-communications' ),
+				'menu-1'      => esc_html__( 'Primary', 'clinic-communications' ),
+				'footer-menu' => esc_html__( 'Footer Menu', 'clinic-communications' ),
 			)
 		);
 
@@ -211,6 +212,49 @@ function clinic_communications_customize_register( $wp_customize ) {
 		array(
 			'title'    => esc_html__( 'Social Media Links', 'clinic-communications' ),
 			'priority' => 30,
+		)
+	);
+
+	// Footer Section
+	$wp_customize->add_section(
+		'clinic_communications_footer_section',
+		array(
+			'title'    => esc_html__( 'Footer Settings', 'clinic-communications' ),
+			'priority' => 31,
+		)
+	);
+
+	// Acknowledgement Text 1
+	$wp_customize->add_setting(
+		'clinic_communications_ack_text_1',
+		array(
+			'default'           => 'Clinic Communications acknowledges and pays respect to the Gadigal,<br> Cammeraygal and Gweagal people on the lands in which we work.',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		'clinic_communications_ack_text_1',
+		array(
+			'label'   => esc_html__( 'Acknowledgement Text 1', 'clinic-communications' ),
+			'section' => 'clinic_communications_footer_section',
+			'type'    => 'textarea',
+		)
+	);
+
+	// Acknowledgement Text 2
+	$wp_customize->add_setting(
+		'clinic_communications_ack_text_2',
+		array(
+			'default'           => 'Clinic Communications acknowledges we are working on stolen<br> lands and that sovereignty has not been ceded.',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		'clinic_communications_ack_text_2',
+		array(
+			'label'   => esc_html__( 'Acknowledgement Text 2', 'clinic-communications' ),
+			'section' => 'clinic_communications_footer_section',
+			'type'    => 'textarea',
 		)
 	);
 
