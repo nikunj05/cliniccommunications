@@ -18,11 +18,27 @@ $(document).ready(function () {
   }
 
   // Mobile Submenu Logic
-  $(".menu-item.has-submenu > .nav-link").on("click", function (e) {
+  $(".menu-item.has-submenu .submenu-arrow-down-icon-wrapper").on("click", function (e) {
     if ($(window).width() < 992) {
       e.preventDefault();
-      $(this).siblings(".submenu").slideToggle();
-      $(this).parent().toggleClass("sub-menu-opened");
+      e.stopPropagation();
+      const $parentLi = $(this).closest(".menu-item");
+      $parentLi.find(".submenu").first().slideToggle();
+      $parentLi.toggleClass("sub-menu-opened");
+    }
+  });
+
+  // Specifically for the "Services" link to allow navigation OR toggle
+  $(".menu-item.has-submenu > .nav-link").on("click", function (e) {
+    if ($(window).width() < 992) {
+      // If they click the link itself (the text), it should navigate if it has a valid href.
+      // If the href is javascript:void(0) or #, we can toggle the submenu as a fallback.
+      const href = $(this).attr("href");
+      if (href === "javascript:void(0)" || href === "#") {
+        e.preventDefault();
+        $(this).siblings(".submenu-arrow-down-icon-wrapper").trigger("click");
+      }
+      // Otherwise, let it navigate.
     }
   });
 

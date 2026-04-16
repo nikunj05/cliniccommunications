@@ -245,28 +245,60 @@ img {
         text-transform: uppercase;
         letter-spacing: 0.15em;
 
-        &:hover,
-        &.active {
+        &:hover {
           color: #9b8c85;
 
-          .submenu-arrow-down-icon {
-            transform: rotate(180deg);
-
-            path {
-              fill: #9b8c85;
+          &+.submenu-arrow-down-icon-wrapper {
+            svg {
+              path {
+                fill: #9b8c85;
+              }
             }
           }
         }
 
-        .submenu-arrow-down-icon {
-          transition: $transition;
-          margin-left: 5px;
-          width: 14px;
-          height: 14px;
+        &.active {
+          color: #9b8c85 !important;
+
+          &+span.submenu-arrow-down-icon-wrapper {
+            transform: rotate(180deg) !important;
+
+            svg {
+              path {
+                fill: #9b8c85 !important;
+              }
+            }
+          }
         }
 
         &.dropdown-toggle {
           gap: 0;
+
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      .nav-link-wrapper {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .submenu-arrow-down-icon-wrapper {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 5px;
+          margin-left: 2px;
+          transition: $transition;
+
+          .submenu-arrow-down-icon {
+            transition: $transition;
+            width: 14px;
+            height: 14px;
+          }
         }
       }
 
@@ -318,15 +350,18 @@ img {
                 display: block;
                 padding: 12px 16px;
                 color: $color-black;
+                background: transparent;
                 font-size: 14px;
                 text-decoration: none;
                 transition: all 0.3s ease;
                 border-radius: 8px;
 
                 &:hover {
-                  background: rgba(145, 147, 147, 0.08);
-                  color: $font-color;
-                  padding-left: 20px;
+                  color: #9b8c85;
+                }
+
+                &.active {
+                  color: #9b8c85 !important;
                 }
               }
             }
@@ -341,11 +376,9 @@ img {
             visibility: visible;
             transform: translateY(15px) translateX(-50%);
           }
-        }
 
-        .dropdown-toggle {
-          &::after {
-            display: none;
+          .submenu-arrow-down-icon {
+            transform: rotate(180deg) !important;
           }
         }
 
@@ -356,19 +389,19 @@ img {
             visibility: visible;
             transform: translateY(10px) translateX(-50%);
           }
+
+          .submenu-arrow-down-icon {
+            transform: rotate(180deg);
+          }
         }
 
         &.active,
         &.sub-menu-opened {
           .nav-link {
-            &.dropdown-toggle {
-              color: $color-black;
-            }
+            color: $color-black;
           }
 
           .submenu-arrow-down-icon {
-            transform: rotate(180deg);
-
             path {
               fill: $color-black;
             }
@@ -2107,6 +2140,508 @@ footer {
           margin-bottom: 0;
         }
       }
+    }
+  }
+}
+
+// Service Page
+.services-intro-section {
+  background-color: $off-white-bg-color;
+
+  .services-intro-content {
+    .si-title {
+      font-family: $font-family-playfair;
+      font-size: 39px;
+      font-weight: 400;
+      margin-bottom: 50px;
+    }
+
+    .si-desc {
+      font-size: 20px;
+      margin-bottom: 32px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.what-we-do-best-section {
+  background-color: #2e2e2c;
+  color: $color-white;
+}
+
+// Service List Section
+.services-list-section {
+  background-color: $off-white-bg-color;
+
+  .service-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: start;
+    padding-bottom: 120px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &.row-reverse {
+      flex-direction: row-reverse;
+    }
+
+    .service-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .service-title {
+        font-family: $font-family-playfair;
+        font-size: 39px;
+        font-weight: 400;
+        margin-bottom: 35px;
+      }
+
+      .service-description {
+        font-size: 17px;
+        margin-bottom: 24px;
+        line-height: 1.6;
+      }
+
+      .service-price {
+        font-size: 17px;
+        margin-bottom: 24px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+      }
+    }
+
+    .service-image {
+      img {
+        min-width: 394px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+// How We Work Section
+.how-we-work-section {
+  background-color: #2e2e2c;
+  color: $color-white;
+  padding: 100px 0px;
+
+  .hww-flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .hww-flex-col {
+    flex: 1;
+  }
+
+  .hww-item {
+    text-align: center;
+
+    .hww-icon {
+      margin-bottom: 26px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hww-title {
+      font-family: $font-family-playfair;
+      font-size: 20px;
+      margin-bottom: 32px;
+      font-weight: 400;
+      color: $color-white;
+    }
+
+    .hww-desc {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #FAFAFA;
+      margin: 0 auto;
+      max-width: 239px
+    }
+  }
+}
+
+// Social media strategy page css start 
+.blueprint-behind-section {
+  background-color: $off-white-bg-color;
+
+  .blueprint-behind-content {
+    .blueprint-title {
+      font-family: $font-family-playfair;
+      font-size: 50px;
+      font-weight: 400;
+      letter-spacing: -0.05em;
+      margin: 0px
+    }
+  }
+}
+
+// Strategy Intro Section
+.strategy-intro-section {
+  background-color: #2e2e2c;
+  color: $color-white;
+
+  .strategy-intro-row {
+    display: flex;
+    gap: 40px;
+    align-items: start;
+    max-width: 1050px;
+    margin: 0 auto;
+
+    .strategy-intro-image {
+      img {
+        height: auto;
+      }
+    }
+
+    .strategy-intro-content {
+      flex: 1;
+
+      .si-title {
+        font-family: $font-family-playfair;
+        font-size: 41px;
+        margin-bottom: 40px;
+        color: $color-white;
+        letter-spacing: -0.05em;
+        font-weight: 400;
+      }
+
+      .si-subtitle {
+        font-family: $font-family-playfair;
+        font-size: 41px;
+        margin-bottom: 30px;
+        color: $color-white;
+        letter-spacing: -0.05em;
+        font-weight: 400;
+      }
+
+      .si-description {
+        max-width: 430px;
+
+        p {
+          font-size: 19px;
+          line-height: 1.9em;
+          margin-bottom: 40px;
+          color: $color-white;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Strategy Prerequisite Section
+.strategy-prerequisite-section {
+  background-color: $off-white-bg-color;
+
+  .strategy-prerequisite-content {
+    .sp-title {
+      font-family: $font-family-playfair;
+      font-size: 55px;
+      font-weight: 400;
+      margin-bottom: 54px;
+      letter-spacing: -0.05em;
+    }
+
+    .sp-description {
+      p {
+        font-size: 20px;
+        margin-bottom: 32px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// Strategy Testimonials Section
+.strategy-testimonials-section {
+  background-color: #2e2e2c;
+  color: $color-white;
+
+  .testimonials-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .testimonial-item {
+    .testimonial-stars {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 65px;
+
+      img {
+        width: 62px;
+        height: auto;
+      }
+    }
+
+    .testimonial-headline {
+      font-family: $font-family-playfair;
+      font-size: 42px;
+      font-weight: 400;
+      margin-bottom: 36px;
+      color: #f6f5f0;
+      letter-spacing: -0.05em;
+    }
+
+    .testimonial-body {
+      font-size: 17px;
+      margin-bottom: 43px;
+      color: #fafafa;
+      line-height: 1.6;
+    }
+
+    .testimonial-author {
+      font-family: $font-family-playfair;
+      font-size: 32px;
+      font-weight: 400;
+      margin: 0px;
+      color: #f6f5f0;
+      letter-spacing: -0.05em;
+    }
+  }
+}
+
+// Strategy Process Section
+.strategy-process-section {
+  background-color: $off-white-bg-color;
+
+  .process-title {
+    font-family: $font-family-playfair;
+    font-size: 55px;
+    margin-bottom: 70px;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+  }
+
+  .strategy-process-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1080px;
+    margin: 0 auto;
+
+    .process-item {
+      flex: 1;
+
+      .process-icon {
+        margin-bottom: 57px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .process-step-title {
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 24px;
+        text-align: left;
+      }
+
+      .process-step-desc {
+        font-size: 15px;
+        text-align: left;
+        margin: 0px;
+      }
+    }
+  }
+}
+
+// Social Media Marketing page css start
+
+// Management Overview Section
+.management-overview-section {
+  background-color: $off-white-bg-color;
+
+  .mo-heading {
+    font-family: $font-family-playfair;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    letter-spacing: -0.002em;
+  }
+
+  .mo-content-row {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 40px;
+  }
+
+  .management-img-col {
+    .mo-img {
+      max-width: 500px;
+    }
+  }
+
+  .management-text-col {
+    flex: 1;
+  }
+
+  .mo-text-content {
+    .mo-subheading {
+      font-family: $font-family-playfair;
+      font-size: 39px;
+      font-weight: 400;
+      margin-bottom: 55px;
+    }
+
+    .mo-familiar {
+      font-size: 20px;
+      margin-bottom: 45px;
+      color: $color-black;
+    }
+
+    .mo-list {
+      padding-left: 0;
+      margin: 0 0 0 10px;
+
+      li {
+        position: relative;
+        margin-left: 26px;
+        font-size: 20px;
+        line-height: 1.9em;
+        margin-bottom: 0px;
+        color: $color-black;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.social-media-mobile-section {
+  background-color: #2E2E2C;
+  color: $color-white;
+
+  .smm-heading {
+    font-family: $font-family-playfair;
+    font-size: 75px;
+    font-weight: 400;
+    color: $color-white;
+    margin-bottom: 40px;
+  }
+
+  .smm-img-wrapper {
+    text-align: center;
+
+    .smm-img {
+      margin: 0 auto;
+    }
+  }
+}
+
+.health-mission-section {
+  background-color: $off-white-bg-color;
+
+  .hm-content-row {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 40px;
+  }
+
+  .hm-img-col {
+    .hm-img {
+      max-width: 500px;
+    }
+  }
+
+  .hm-text-col {
+    flex: 1;
+  }
+
+  .hm-text-content {
+    .hm-subheading {
+      font-family: $font-family-playfair;
+      font-size: 55px;
+      font-weight: 400;
+      margin-bottom: 50px;
+      letter-spacing: -0.05em;
+    }
+
+    .hm-familiar {
+      font-size: 20px;
+      line-height: 1.9em;
+      margin-bottom: 0px;
+      color: $color-black;
+    }
+  }
+}
+
+// Strategy Highlights Section
+.strategy-highlights-section {
+  background-color: #2e2e2c;
+  color: $color-white;
+  overflow: hidden;
+
+  .sh-row {
+    display: flex;
+    align-items: center;
+    padding-bottom: 80px;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 50px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &.sh-row-reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .sh-text-col {
+    flex: 1;
+  }
+
+  .sh-text-content {
+    .sh-title {
+      font-family: $font-family-playfair;
+      font-size: 50px;
+      font-weight: 400;
+      color: #F6F5F0;
+      margin-bottom: 34px;
+    }
+
+    .sh-desc {
+      font-size: 17px;
+      color: #FAFAFA;
+      margin-bottom: 24px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .sh-image-wrapper {
+    .sh-img {
+      max-width: 394px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 0px;
     }
   }
 }

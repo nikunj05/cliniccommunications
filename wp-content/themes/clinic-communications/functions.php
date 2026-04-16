@@ -68,14 +68,17 @@ function clinic_communications_scripts() {
 	// Styles
 	wp_enqueue_style( 'clinic-communications-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '5.0.0' );
 	wp_enqueue_style( 'clinic-communications-aos', get_template_directory_uri() . '/css/aos.css', array(), '1.0.0' );
+	wp_enqueue_style( 'clinic-communications-slick', get_template_directory_uri() . '/css/slick.css', array(), '1.8.1' );
+	wp_enqueue_style( 'clinic-communications-slick-theme', get_template_directory_uri() . '/css/slick-theme.css', array( 'clinic-communications-slick' ), '1.8.1' );
 	wp_enqueue_style( 'clinic-communications-main-style', get_template_directory_uri() . '/css/style.css', array(), '1.0.0' );
 	wp_enqueue_style( 'clinic-communications-style', get_stylesheet_uri(), array(), '1.0.0' );
 
 	// Scripts
 	wp_enqueue_script( 'clinic-communications-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.bundle.js', array(), '5.0.0', true );
 	wp_enqueue_script( 'clinic-communications-aos-js', get_template_directory_uri() . '/js/aos.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'clinic-communications-slick-js', get_template_directory_uri() . '/js/slick.min.js', array( 'jquery' ), '1.8.1', true );
 	wp_enqueue_script( 'clinic-communications-jquery', get_template_directory_uri() . '/js/jquery.min.js', array(), '3.6.0', true );
-	wp_enqueue_script( 'clinic-communications-main-js', get_template_directory_uri() . '/js/main.js', array( 'clinic-communications-jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'clinic-communications-main-js', get_template_directory_uri() . '/js/main.js', array( 'clinic-communications-jquery', 'clinic-communications-slick-js' ), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'clinic_communications_scripts' );
 
