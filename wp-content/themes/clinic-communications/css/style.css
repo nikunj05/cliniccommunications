@@ -1684,20 +1684,24 @@ img {
   position: relative;
   z-index: 2;
 }
-.social-cta-section .social-cta-content .social-cta-title {
+.social-cta-section .social-cta-content h2 {
   font-family: "Playfair Display", serif;
   font-size: 50px;
   margin-bottom: 34px;
   font-weight: 400;
   color: #ffffff;
   text-transform: none;
+  max-width: 670px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.social-cta-section .social-cta-content .cta-subtitle {
+.social-cta-section .social-cta-content p {
   font-family: "Montserrat", sans-serif;
   font-size: 17px;
   color: #ffffff;
   margin-bottom: 35px;
   font-weight: 400;
+  text-align: center;
 }
 .social-cta-section .social-cta-content .down-arrow {
   text-align: center;
@@ -1812,7 +1816,8 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   z-index: 3;
   padding: 40px 0px;
 }
-.common-banner-section .common-banner-title {
+.common-banner-section h1,
+.common-banner-section h2 {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 90px;
@@ -1949,17 +1954,23 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
 .services-intro-section {
   background-color: #F6F5F0;
 }
-.services-intro-section .services-intro-content .si-title {
+.services-intro-section .services-intro-content h2 {
   font-family: "Playfair Display", serif;
   font-size: 39px;
   font-weight: 400;
   margin-bottom: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.services-intro-section .services-intro-content .si-desc {
+.services-intro-section .services-intro-content p {
   font-size: 20px;
   margin-bottom: 32px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.services-intro-section .services-intro-content .si-desc:last-child {
+.services-intro-section .services-intro-content p:last-child {
   margin-bottom: 0;
 }
 
@@ -1991,22 +2002,16 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   flex-direction: column;
   justify-content: center;
 }
-.services-list-section .service-row .service-content .service-title {
+.services-list-section .service-row .service-content h3 {
   font-family: "Playfair Display", serif;
   font-size: 39px;
   font-weight: 400;
   margin-bottom: 35px;
 }
-.services-list-section .service-row .service-content .service-description {
+.services-list-section .service-row .service-content p {
   font-size: 17px;
   margin-bottom: 24px;
   line-height: 1.6;
-}
-.services-list-section .service-row .service-content .service-price {
-  font-size: 17px;
-  margin-bottom: 24px;
-  line-height: 1.6;
-  margin-bottom: 30px;
 }
 .services-list-section .service-row .service-image img {
   min-width: 394px;
@@ -2018,31 +2023,31 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   color: #ffffff;
   padding: 100px 0px;
 }
-.how-we-work-section .hww-flex-row {
+.how-we-work-section .how-we-work-flex-row {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
 }
-.how-we-work-section .hww-flex-col {
+.how-we-work-section .how-we-work-flex-col {
   flex: 1;
 }
-.how-we-work-section .hww-item {
+.how-we-work-section .how-we-work-item {
   text-align: center;
 }
-.how-we-work-section .hww-item .hww-icon {
+.how-we-work-section .how-we-work-item .how-we-work-icon {
   margin-bottom: 26px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.how-we-work-section .hww-item .hww-title {
+.how-we-work-section .how-we-work-item h4 {
   font-family: "Playfair Display", serif;
   font-size: 20px;
   margin-bottom: 32px;
   font-weight: 400;
   color: #ffffff;
 }
-.how-we-work-section .hww-item .hww-desc {
+.how-we-work-section .how-we-work-item p {
   font-size: 15px;
   line-height: 1.6;
   color: #FAFAFA;
@@ -2721,11 +2726,11 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
     padding: 80px 0px;
     background-attachment: scroll;
   }
-  .social-cta-section .social-cta-content .social-cta-title {
+  .social-cta-section .social-cta-content h2 {
     font-size: 38px;
     margin-bottom: 24px;
   }
-  .social-cta-section .social-cta-content .cta-subtitle {
+  .social-cta-section .social-cta-content p {
     font-size: 16px;
     margin-bottom: 24px;
   }
@@ -2762,7 +2767,8 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   .common-banner-section .common-banner-bg {
     min-height: 380px;
   }
-  .common-banner-section .common-banner-title {
+  .common-banner-section h1,
+  .common-banner-section h2 {
     font-size: 68px;
   }
   .digital-support-section .digital-support-info .ds-info-heading {
@@ -2832,11 +2838,11 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
     font-size: 16px;
     margin-bottom: 15px;
   }
-  .services-intro-section .services-intro-content .si-title {
+  .services-intro-section .services-intro-content h2 {
     font-size: 28px;
     margin-bottom: 32px;
   }
-  .services-intro-section .services-intro-content .si-desc {
+  .services-intro-section .services-intro-content p {
     font-size: 16px;
     margin-bottom: 24px;
   }
@@ -2857,20 +2863,13 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
     padding-right: 0;
     text-align: center;
   }
-  .services-list-section .service-row .service-content .service-title {
+  .services-list-section .service-row .service-content h3 {
     font-size: 28px;
     margin-bottom: 24px;
   }
-  .services-list-section .service-row .service-content .service-description {
+  .services-list-section .service-row .service-content p {
     font-size: 16px;
     margin-bottom: 20px;
-  }
-  .services-list-section .service-row .service-content .service-description br {
-    display: none;
-  }
-  .services-list-section .service-row .service-content .service-price {
-    font-size: 15px;
-    margin-bottom: 24px;
   }
   .services-list-section .service-row .service-image {
     flex: 0 0 100%;
@@ -2878,27 +2877,27 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   .services-list-section .service-row .service-image img {
     height: auto;
   }
-  .how-we-work-section .hww-flex-row {
+  .how-we-work-section .how-we-work-flex-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
   }
-  .how-we-work-section .hww-flex-col {
+  .how-we-work-section .how-we-work-flex-col {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .how-we-work-section .hww-item .hww-icon {
+  .how-we-work-section .how-we-work-item .how-we-work-icon {
     margin-bottom: 24px;
   }
-  .how-we-work-section .hww-item .hww-icon img {
+  .how-we-work-section .how-we-work-item .how-we-work-icon img {
     width: 45px;
     height: 45px;
   }
-  .how-we-work-section .hww-item .hww-title {
+  .how-we-work-section .how-we-work-item h4 {
     font-size: 20px;
     margin-bottom: 15px;
   }
-  .how-we-work-section .hww-item .hww-desc {
+  .how-we-work-section .how-we-work-item p {
     max-width: 100%;
   }
   .blueprint-behind-section .blueprint-behind-content .blueprint-title {
@@ -3411,11 +3410,11 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   .social-cta-section .social-cta-parallax {
     padding: 40px 0;
   }
-  .social-cta-section .social-cta-content .social-cta-title {
+  .social-cta-section .social-cta-content h2 {
     font-size: 26px;
     margin-bottom: 16px;
   }
-  .social-cta-section .social-cta-content .cta-subtitle {
+  .social-cta-section .social-cta-content p {
     font-size: 14px;
     margin-bottom: 20px;
   }
@@ -3588,7 +3587,8 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   .common-banner-section .common-banner-content {
     padding: 15px 0px;
   }
-  .common-banner-section .common-banner-title {
+  .common-banner-section h1,
+  .common-banner-section h2 {
     font-size: 38px;
   }
   .digital-support-section .digital-support-info .ds-info-heading {
@@ -3652,25 +3652,19 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
     font-size: 14px;
     margin-bottom: 15px;
   }
-  .services-intro-section .services-intro-content .si-title {
+  .services-intro-section .services-intro-content h2 {
     font-size: 24px;
     margin-bottom: 24px;
   }
-  .services-intro-section .services-intro-content .si-title br {
-    display: none;
-  }
-  .services-intro-section .services-intro-content .si-desc {
+  .services-intro-section .services-intro-content p {
     font-size: 14px;
     margin-bottom: 15px;
-  }
-  .services-intro-section .services-intro-content .si-desc br {
-    display: none;
   }
   .services-list-section .service-row {
     gap: 24px;
     padding-bottom: 35px;
   }
-  .services-list-section .service-row .service-content .service-title {
+  .services-list-section .service-row .service-content h3 {
     font-size: 24px;
     margin-bottom: 15px;
   }
@@ -3678,40 +3672,36 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
     font-size: 15px;
     margin-bottom: 15px;
   }
-  .services-list-section .service-row .service-content .service-description {
+  .services-list-section .service-row .service-content p {
     font-size: 14px;
     margin-bottom: 15px;
-  }
-  .services-list-section .service-row .service-content .service-price {
-    font-size: 14px;
-    margin-bottom: 16px;
   }
   .services-list-section .service-row .service-image img {
     width: 100%;
     min-width: auto;
     height: auto;
   }
-  .how-we-work-section .hww-flex-row {
+  .how-we-work-section .how-we-work-flex-row {
     margin: 0;
     gap: 24px;
     grid-template-columns: repeat(1, 1fr);
   }
-  .how-we-work-section .hww-flex-col {
+  .how-we-work-section .how-we-work-flex-col {
     flex: 0 0 100%;
     max-width: 100%;
     padding: 0;
   }
-  .how-we-work-section .hww-item .hww-icon {
+  .how-we-work-section .how-we-work-item .how-we-work-icon {
     margin-bottom: 15px;
   }
-  .how-we-work-section .hww-item .hww-icon img {
+  .how-we-work-section .how-we-work-item .how-we-work-icon img {
     width: 36px;
     height: 36px;
   }
-  .how-we-work-section .hww-item .hww-title {
+  .how-we-work-section .how-we-work-item h4 {
     font-size: 18px;
   }
-  .how-we-work-section .hww-item .hww-desc {
+  .how-we-work-section .how-we-work-item p {
     font-size: 14px;
   }
   .blueprint-behind-section .blueprint-behind-content .blueprint-title {

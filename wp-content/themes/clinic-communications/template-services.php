@@ -42,7 +42,9 @@ $services_reviews = get_field( 'services_reviews' );
         <img src="<?php echo esc_url( $featured_img_url ); ?>" alt="<?php the_title_attribute(); ?>" class="banner-img">
         <div class="container">
           <div class="common-banner-content text-center">
-            <h1 class="common-banner-title" data-aos="fade-up"><?php echo $banner_title; ?></h1>
+            <h1 class="common-banner-title" data-aos="fade-up">
+              <span class="font-style-italic"><?php echo $banner_title; ?></span>
+            </h1>
           </div>
         </div>
       </div>
@@ -111,16 +113,16 @@ $services_reviews = get_field( 'services_reviews' );
     <section class="how-we-work-section section-space-tb">
       <div class="container">
         <div class="how-we-work-inner">
-          <div class="hww-flex-row">
+          <div class="how-we-work-flex-row">
 			<?php if ( $how_we_work_items ) : ?>
 				<?php foreach ( $how_we_work_items as $index => $item ) : ?>
-					<div class="hww-flex-col" data-aos="fade-up" data-aos-delay="<?php echo $index * 100; ?>">
-						<div class="hww-item text-center">
-							<div class="hww-icon">
+					<div class="how-we-work-flex-col" data-aos="fade-up" data-aos-delay="<?php echo $index * 100; ?>">
+						<div class="how-we-work-item text-center">
+							<div class="how-we-work-icon">
 								<img src="<?php echo esc_url( $item['item_icon'] ); ?>" alt="<?php echo esc_attr( $item['item_title'] ); ?>" width="61" height="61">
 							</div>
-							<h4 class="hww-title"><?php echo esc_html( $item['item_title'] ); ?></h4>
-							<p class="hww-desc">
+							<h4><?php echo esc_html( $item['item_title'] ); ?></h4>
+							<p>
 								<?php echo esc_html( $item['item_description'] ); ?>
 							</p>
 						</div>

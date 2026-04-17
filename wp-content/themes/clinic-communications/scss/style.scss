@@ -1804,21 +1804,25 @@ img {
     position: relative;
     z-index: 2;
 
-    .social-cta-title {
+    h2 {
       font-family: $font-family-playfair;
       font-size: 50px;
       margin-bottom: 34px;
       font-weight: 400;
       color: $color-white;
       text-transform: none;
+      max-width: 670px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    .cta-subtitle {
+    p {
       font-family: $font-family-montserrat;
       font-size: 17px;
       color: $color-white;
       margin-bottom: 35px;
       font-weight: 400;
+      text-align: center;
     }
 
     .down-arrow {
@@ -1973,7 +1977,8 @@ footer {
     padding: 40px 0px;
   }
 
-  .common-banner-title {
+  h1,
+  h2 {
     font-family: $font-family-playfair;
     font-weight: 400;
     font-size: 90px;
@@ -2149,16 +2154,22 @@ footer {
   background-color: $off-white-bg-color;
 
   .services-intro-content {
-    .si-title {
+    h2 {
       font-family: $font-family-playfair;
       font-size: 39px;
       font-weight: 400;
       margin-bottom: 50px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    .si-desc {
+    p {
       font-size: 20px;
       margin-bottom: 32px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
 
       &:last-child {
         margin-bottom: 0;
@@ -2198,24 +2209,17 @@ footer {
       flex-direction: column;
       justify-content: center;
 
-      .service-title {
+      h3 {
         font-family: $font-family-playfair;
         font-size: 39px;
         font-weight: 400;
         margin-bottom: 35px;
       }
 
-      .service-description {
+      p {
         font-size: 17px;
         margin-bottom: 24px;
         line-height: 1.6;
-      }
-
-      .service-price {
-        font-size: 17px;
-        margin-bottom: 24px;
-        line-height: 1.6;
-        margin-bottom: 30px;
       }
     }
 
@@ -2234,27 +2238,27 @@ footer {
   color: $color-white;
   padding: 100px 0px;
 
-  .hww-flex-row {
+  .how-we-work-flex-row {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
   }
 
-  .hww-flex-col {
+  .how-we-work-flex-col {
     flex: 1;
   }
 
-  .hww-item {
+  .how-we-work-item {
     text-align: center;
 
-    .hww-icon {
+    .how-we-work-icon {
       margin-bottom: 26px;
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
-    .hww-title {
+    h4 {
       font-family: $font-family-playfair;
       font-size: 20px;
       margin-bottom: 32px;
@@ -2262,7 +2266,7 @@ footer {
       color: $color-white;
     }
 
-    .hww-desc {
+    p {
       font-size: 15px;
       line-height: 1.6;
       color: #FAFAFA;

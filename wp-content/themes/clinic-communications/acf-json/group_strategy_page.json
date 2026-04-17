@@ -1,0 +1,262 @@
+{
+    "key": "group_strategy_page",
+    "title": "Page: Social Media Strategy",
+    "fields": [
+        {
+            "key": "field_strategy_tab_banner",
+            "label": "Banner",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_strategy_banner_title",
+            "label": "Banner Title",
+            "name": "strategy_banner_title",
+            "type": "text",
+            "instructions": "The title displayed in the banner section."
+        },
+        {
+            "key": "field_strategy_tab_blueprint",
+            "label": "Blueprint",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_strategy_blueprint_text",
+            "label": "Blueprint Text",
+            "name": "strategy_blueprint_text",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0
+        },
+        {
+            "key": "field_strategy_tab_intro",
+            "label": "Intro",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_strategy_intro_image",
+            "label": "Intro Image",
+            "name": "strategy_intro_image",
+            "type": "image",
+            "return_format": "url",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_strategy_intro_title",
+            "label": "Intro Title",
+            "name": "strategy_intro_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_strategy_intro_subtitle",
+            "label": "Intro Subtitle",
+            "name": "strategy_intro_subtitle",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_strategy_intro_description",
+            "label": "Intro Description",
+            "name": "strategy_intro_description",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 1
+        },
+        {
+            "key": "field_strategy_tab_prerequisite",
+            "label": "Prerequisite",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_strategy_prerequisite_title",
+            "label": "Prerequisite Title",
+            "name": "strategy_prerequisite_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_strategy_prerequisite_description",
+            "label": "Prerequisite Description",
+            "name": "strategy_prerequisite_description",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 1
+        },
+        {
+            "key": "field_strategy_tab_testimonials",
+            "label": "Testimonials",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_strategy_testimonials",
+            "label": "Testimonials",
+            "name": "strategy_testimonials",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Add Testimonial",
+            "sub_fields": [
+                {
+                    "key": "field_testimonial_star_count",
+                    "label": "Star Count",
+                    "name": "star_count",
+                    "type": "number",
+                    "default_value": 5,
+                    "min": 1,
+                    "max": 5
+                },
+                {
+                    "key": "field_testimonial_headline",
+                    "label": "Headline",
+                    "name": "testimonial_headline",
+                    "type": "wysiwyg",
+                    "toolbar": "basic",
+                    "media_upload": 0
+                },
+                {
+                    "key": "field_testimonial_body",
+                    "label": "Body Text",
+                    "name": "testimonial_body",
+                    "type": "wysiwyg",
+                    "toolbar": "basic",
+                    "media_upload": 0
+                },
+                {
+                    "key": "field_testimonial_author",
+                    "label": "Author",
+                    "name": "testimonial_author",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "key": "field_strategy_tab_process",
+            "label": "Process",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_strategy_process_title",
+            "label": "Process Section Title",
+            "name": "strategy_process_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_strategy_process_steps",
+            "label": "Process Steps",
+            "name": "strategy_process_steps",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Add Step",
+            "sub_fields": [
+                {
+                    "key": "field_step_icon",
+                    "label": "Icon",
+                    "name": "step_icon",
+                    "type": "image",
+                    "return_format": "url",
+                    "preview_size": "thumbnail"
+                },
+                {
+                    "key": "field_step_title",
+                    "label": "Step Title",
+                    "name": "step_title",
+                    "type": "text"
+                },
+                {
+                    "key": "field_step_description",
+                    "label": "Step Description",
+                    "name": "step_description",
+                    "type": "textarea",
+                    "rows": 3
+                }
+            ]
+        },
+        {
+            "key": "field_strategy_tab_cta",
+            "label": "CTA Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_strategy_cta_bg_image",
+            "label": "CTA Background Image",
+            "name": "strategy_cta_bg_image",
+            "type": "image",
+            "return_format": "url",
+            "preview_size": "large"
+        },
+        {
+            "key": "field_strategy_cta_title",
+            "label": "CTA Title",
+            "name": "strategy_cta_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_strategy_cta_subtitle",
+            "label": "CTA Subtitle",
+            "name": "strategy_cta_subtitle",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_strategy_cta_button_text",
+            "label": "Button Text",
+            "name": "strategy_cta_button_text",
+            "type": "text",
+            "default_value": "BOOK NOW"
+        },
+        {
+            "key": "field_strategy_cta_button_link",
+            "label": "Button Link",
+            "name": "strategy_cta_button_link",
+            "type": "text",
+            "default_value": "#"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-strategy.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

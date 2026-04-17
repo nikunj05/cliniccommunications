@@ -551,12 +551,12 @@
     }
 
     .social-cta-content {
-      .social-cta-title {
+      h2 {
         font-size: 38px;
         margin-bottom: 24px;
       }
 
-      .cta-subtitle {
+      p {
         font-size: 16px;
         margin-bottom: 24px;
       }
@@ -617,7 +617,8 @@
       min-height: 380px;
     }
 
-    .common-banner-title {
+    h1,
+    h2 {
       font-size: 68px;
     }
   }
@@ -730,12 +731,12 @@
   // Service Page scss start
   .services-intro-section {
     .services-intro-content {
-      .si-title {
+      h2 {
         font-size: 28px;
         margin-bottom: 32px;
       }
 
-      .si-desc {
+      p {
         font-size: 16px;
         margin-bottom: 24px;
       }
@@ -763,23 +764,14 @@
         padding-right: 0;
         text-align: center;
 
-        .service-title {
+        h3 {
           font-size: 28px;
           margin-bottom: 24px;
         }
 
-        .service-description {
+        p {
           font-size: 16px;
           margin-bottom: 20px;
-
-          br {
-            display: none;
-          }
-        }
-
-        .service-price {
-          font-size: 15px;
-          margin-bottom: 24px;
         }
       }
 
@@ -794,19 +786,19 @@
   }
 
   .how-we-work-section {
-    .hww-flex-row {
+    .how-we-work-flex-row {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 32px;
     }
 
-    .hww-flex-col {
+    .how-we-work-flex-col {
       flex: 0 0 100%;
       max-width: 100%;
     }
 
-    .hww-item {
-      .hww-icon {
+    .how-we-work-item {
+      .how-we-work-icon {
         margin-bottom: 24px;
 
         img {
@@ -815,12 +807,12 @@
         }
       }
 
-      .hww-title {
+      h4 {
         font-size: 20px;
         margin-bottom: 15px;
       }
 
-      .hww-desc {
+      p {
         max-width: 100%;
       }
     }
@@ -1596,12 +1588,12 @@
 
 
     .social-cta-content {
-      .social-cta-title {
+      h2 {
         font-size: 26px;
         margin-bottom: 16px;
       }
 
-      .cta-subtitle {
+      p {
         font-size: 14px;
         margin-bottom: 20px;
       }
@@ -1840,7 +1832,8 @@
       padding: 15px 0px;
     }
 
-    .common-banner-title {
+    h1,
+    h2 {
       font-size: 38px;
     }
   }
@@ -1942,22 +1935,14 @@
   // Service Page
   .services-intro-section {
     .services-intro-content {
-      .si-title {
+      h2 {
         font-size: 24px;
         margin-bottom: 24px;
-
-        br {
-          display: none;
-        }
       }
 
-      .si-desc {
+      p {
         font-size: 14px;
         margin-bottom: 15px;
-
-        br {
-          display: none;
-        }
       }
     }
   }
@@ -1969,7 +1954,7 @@
       padding-bottom: 35px;
 
       .service-content {
-        .service-title {
+        h3 {
           font-size: 24px;
           margin-bottom: 15px;
         }
@@ -1979,14 +1964,9 @@
           margin-bottom: 15px;
         }
 
-        .service-description {
+        p {
           font-size: 14px;
           margin-bottom: 15px;
-        }
-
-        .service-price {
-          font-size: 14px;
-          margin-bottom: 16px;
         }
       }
 
@@ -2001,20 +1981,20 @@
   }
 
   .how-we-work-section {
-    .hww-flex-row {
+    .how-we-work-flex-row {
       margin: 0;
       gap: 24px;
       grid-template-columns: repeat(1, 1fr);
     }
 
-    .hww-flex-col {
+    .how-we-work-flex-col {
       flex: 0 0 100%;
       max-width: 100%;
       padding: 0;
     }
 
-    .hww-item {
-      .hww-icon {
+    .how-we-work-item {
+      .how-we-work-icon {
         margin-bottom: 15px;
 
         img {
@@ -2023,11 +2003,11 @@
         }
       }
 
-      .hww-title {
+      h4 {
         font-size: 18px;
       }
 
-      .hww-desc {
+      p {
         font-size: 14px;
       }
     }
