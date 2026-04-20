@@ -85,49 +85,6 @@ $(document).ready(function () {
   });
 
 
-  // Reviews Slider (Slick)
-  if ($('#reviewsSlider').length) {
-    $('#reviewsSlider').slick({
-      dots: false,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      speed: 1000,
-      pauseOnHover: true,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      prevArrow: $('#prevReview'),
-      nextArrow: $('#nextReview'),
-      responsive: [
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          }
-        }
-      ]
-    });
-  }
-
-  $('.reviews-slider .read-more').on('click', function (e) {
-    e.preventDefault();
-    const $this = $(this);
-    const $text = $this.siblings('.review-text');
-    const isExpanded = $text.hasClass('expanded');
-
-    // Close all other expanded reviews
-    $('.reviews-slider .review-text').not($text).removeClass('expanded');
-    $('.reviews-slider .read-more').not($this).text('Read more');
-
-    // Toggle current review
-    $text.toggleClass('expanded');
-    $this.text($text.hasClass('expanded') ? 'Read less' : 'Read more');
-
-    // Refresh Slick to recalculate heights if necessary
-    $('#reviewsSlider').slick('setPosition');
-  });
-
   // Social Media Slider
   if ($('#socialSlider').length) {
     $('#socialSlider').slick({

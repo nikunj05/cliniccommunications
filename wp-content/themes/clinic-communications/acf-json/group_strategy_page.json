@@ -6,7 +6,16 @@
             "key": "field_strategy_tab_banner",
             "label": "Banner",
             "name": "",
+            "aria-label": "",
             "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "placement": "top",
             "endpoint": 0
         },
@@ -14,14 +23,36 @@
             "key": "field_strategy_banner_title",
             "label": "Banner Title",
             "name": "strategy_banner_title",
+            "aria-label": "",
             "type": "text",
-            "instructions": "The title displayed in the banner section."
+            "instructions": "The title displayed in the banner section.",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_strategy_tab_blueprint",
             "label": "Blueprint",
             "name": "",
+            "aria-label": "",
             "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "placement": "top",
             "endpoint": 0
         },
@@ -29,16 +60,36 @@
             "key": "field_strategy_blueprint_text",
             "label": "Blueprint Text",
             "name": "strategy_blueprint_text",
+            "aria-label": "",
             "type": "wysiwyg",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "tabs": "all",
             "toolbar": "full",
-            "media_upload": 0
+            "media_upload": 0,
+            "default_value": "",
+            "delay": 0
         },
         {
             "key": "field_strategy_tab_intro",
             "label": "Intro",
             "name": "",
+            "aria-label": "",
             "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "placement": "top",
             "endpoint": 0
         },
@@ -46,39 +97,101 @@
             "key": "field_strategy_intro_image",
             "label": "Intro Image",
             "name": "strategy_intro_image",
+            "aria-label": "",
             "type": "image",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "return_format": "url",
-            "preview_size": "medium"
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": 0,
+            "min_height": 0,
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": ""
         },
         {
             "key": "field_strategy_intro_title",
             "label": "Intro Title",
             "name": "strategy_intro_title",
-            "type": "wysiwyg",
-            "toolbar": "basic",
-            "media_upload": 0
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
         },
         {
             "key": "field_strategy_intro_subtitle",
             "label": "Intro Subtitle",
             "name": "strategy_intro_subtitle",
-            "type": "wysiwyg",
-            "toolbar": "basic",
-            "media_upload": 0
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
         },
         {
             "key": "field_strategy_intro_description",
             "label": "Intro Description",
             "name": "strategy_intro_description",
+            "aria-label": "",
             "type": "wysiwyg",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "toolbar": "basic",
-            "media_upload": 1
+            "media_upload": 1,
+            "tabs": "all",
+            "default_value": "",
+            "delay": 0
         },
         {
             "key": "field_strategy_tab_prerequisite",
             "label": "Prerequisite",
             "name": "",
+            "aria-label": "",
             "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "placement": "top",
             "endpoint": 0
         },
@@ -86,23 +199,56 @@
             "key": "field_strategy_prerequisite_title",
             "label": "Prerequisite Title",
             "name": "strategy_prerequisite_title",
-            "type": "wysiwyg",
-            "toolbar": "basic",
-            "media_upload": 0
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
         },
         {
             "key": "field_strategy_prerequisite_description",
             "label": "Prerequisite Description",
             "name": "strategy_prerequisite_description",
+            "aria-label": "",
             "type": "wysiwyg",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "toolbar": "basic",
-            "media_upload": 1
+            "media_upload": 1,
+            "tabs": "all",
+            "default_value": "",
+            "delay": 0
         },
         {
             "key": "field_strategy_tab_testimonials",
             "label": "Testimonials",
             "name": "",
+            "aria-label": "",
             "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "placement": "top",
             "endpoint": 0
         },
@@ -110,40 +256,108 @@
             "key": "field_strategy_testimonials",
             "label": "Testimonials",
             "name": "strategy_testimonials",
+            "aria-label": "",
             "type": "repeater",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "layout": "block",
             "button_label": "Add Testimonial",
+            "min": 0,
+            "max": 0,
+            "rows_per_page": 20,
+            "collapsed": "",
             "sub_fields": [
                 {
                     "key": "field_testimonial_star_count",
                     "label": "Star Count",
                     "name": "star_count",
+                    "aria-label": "",
                     "type": "number",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
                     "default_value": 5,
                     "min": 1,
-                    "max": 5
+                    "max": 5,
+                    "step": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_strategy_testimonials"
                 },
                 {
                     "key": "field_testimonial_headline",
                     "label": "Headline",
                     "name": "testimonial_headline",
-                    "type": "wysiwyg",
-                    "toolbar": "basic",
-                    "media_upload": 0
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_strategy_testimonials"
                 },
                 {
                     "key": "field_testimonial_body",
                     "label": "Body Text",
                     "name": "testimonial_body",
+                    "aria-label": "",
                     "type": "wysiwyg",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
                     "toolbar": "basic",
-                    "media_upload": 0
+                    "media_upload": 0,
+                    "tabs": "all",
+                    "default_value": "",
+                    "delay": 0,
+                    "parent_repeater": "field_strategy_testimonials"
                 },
                 {
                     "key": "field_testimonial_author",
                     "label": "Author",
                     "name": "testimonial_author",
-                    "type": "text"
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_strategy_testimonials"
                 }
             ]
         },
@@ -151,7 +365,16 @@
             "key": "field_strategy_tab_process",
             "label": "Process",
             "name": "",
+            "aria-label": "",
             "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "placement": "top",
             "endpoint": 0
         },
@@ -159,38 +382,110 @@
             "key": "field_strategy_process_title",
             "label": "Process Section Title",
             "name": "strategy_process_title",
+            "aria-label": "",
             "type": "wysiwyg",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "toolbar": "basic",
-            "media_upload": 0
+            "media_upload": 0,
+            "tabs": "all",
+            "default_value": "",
+            "delay": 0
         },
         {
             "key": "field_strategy_process_steps",
             "label": "Process Steps",
             "name": "strategy_process_steps",
+            "aria-label": "",
             "type": "repeater",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "layout": "block",
             "button_label": "Add Step",
+            "min": 0,
+            "max": 0,
+            "rows_per_page": 20,
+            "collapsed": "",
             "sub_fields": [
                 {
                     "key": "field_step_icon",
                     "label": "Icon",
                     "name": "step_icon",
+                    "aria-label": "",
                     "type": "image",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
                     "return_format": "url",
-                    "preview_size": "thumbnail"
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": 0,
+                    "min_height": 0,
+                    "min_size": 0,
+                    "max_width": 0,
+                    "max_height": 0,
+                    "max_size": 0,
+                    "mime_types": "",
+                    "parent_repeater": "field_strategy_process_steps"
                 },
                 {
                     "key": "field_step_title",
                     "label": "Step Title",
                     "name": "step_title",
-                    "type": "text"
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_strategy_process_steps"
                 },
                 {
                     "key": "field_step_description",
                     "label": "Step Description",
                     "name": "step_description",
+                    "aria-label": "",
                     "type": "textarea",
-                    "rows": 3
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "rows": 3,
+                    "default_value": "",
+                    "new_lines": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_strategy_process_steps"
                 }
             ]
         },
@@ -198,7 +493,16 @@
             "key": "field_strategy_tab_cta",
             "label": "CTA Section",
             "name": "",
+            "aria-label": "",
             "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "placement": "top",
             "endpoint": 0
         },
@@ -206,39 +510,106 @@
             "key": "field_strategy_cta_bg_image",
             "label": "CTA Background Image",
             "name": "strategy_cta_bg_image",
+            "aria-label": "",
             "type": "image",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "return_format": "url",
-            "preview_size": "large"
+            "preview_size": "large",
+            "library": "all",
+            "min_width": 0,
+            "min_height": 0,
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": ""
         },
         {
             "key": "field_strategy_cta_title",
             "label": "CTA Title",
             "name": "strategy_cta_title",
-            "type": "wysiwyg",
-            "toolbar": "basic",
-            "media_upload": 0
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
         },
         {
             "key": "field_strategy_cta_subtitle",
             "label": "CTA Subtitle",
             "name": "strategy_cta_subtitle",
-            "type": "wysiwyg",
-            "toolbar": "basic",
-            "media_upload": 0
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
         },
         {
             "key": "field_strategy_cta_button_text",
             "label": "Button Text",
             "name": "strategy_cta_button_text",
+            "aria-label": "",
             "type": "text",
-            "default_value": "BOOK NOW"
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "BOOK NOW",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_strategy_cta_button_link",
             "label": "Button Link",
             "name": "strategy_cta_button_link",
+            "aria-label": "",
             "type": "text",
-            "default_value": "#"
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -258,5 +629,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "show_in_rest": 0
+    "show_in_rest": 0,
+    "modified": 1776683852
 }

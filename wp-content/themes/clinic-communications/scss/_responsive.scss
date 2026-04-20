@@ -39,11 +39,9 @@
   .strategy-intro-section {
     .strategy-intro-row {
       .strategy-intro-content {
-        .si-description {
-          p {
-            line-height: 1.6em;
-            margin-bottom: 24px;
-          }
+        p {
+          line-height: 1.6em;
+          margin-bottom: 24px;
         }
       }
     }
@@ -51,13 +49,13 @@
 
   .management-overview-section {
     .management-img-col {
-      .mo-img {
+      .management-img {
         max-width: 410px;
       }
     }
 
-    .mo-text-content {
-      .mo-list {
+    .management-text-content {
+      .management-list {
         li {
           font-size: 18px;
         }
@@ -66,21 +64,15 @@
   }
 
   .health-mission-section {
-    .hm-img-col {
-      .hm-img {
+    .health-mission-img-col {
+      .health-mission-img {
         max-width: 410px;
       }
     }
 
-    .hm-text-content {
-      .hm-subheading {
+    .health-mission-text-content {
+      h2 {
         font-size: 50px;
-      }
-
-      .hm-familiar {
-        br {
-          display: none;
-        }
       }
     }
   }
@@ -499,26 +491,6 @@
     }
   }
 
-  .reviews-slider-section {
-    .reviews-left {
-      margin-top: 0px;
-      margin-bottom: 24px;
-
-      .excellent-text {
-        font-size: 22px;
-        margin-bottom: 8px;
-      }
-
-      .stars-row {
-        margin-bottom: 8px;
-
-        img {
-          width: 24px;
-          height: 24px;
-        }
-      }
-    }
-  }
 
   .social-media-section {
     .social-title {
@@ -547,7 +519,11 @@
   .social-cta-section {
     .social-cta-parallax {
       padding: 80px 0px;
-      background-attachment: scroll;
+      clip-path: none;
+
+      .social-cta-bg-img {
+        position: absolute;
+      }
     }
 
     .social-cta-content {
@@ -821,7 +797,7 @@
   // Social Media Strategy Page
   .blueprint-behind-section {
     .blueprint-behind-content {
-      .blueprint-title {
+      h2 {
         font-size: 28px;
       }
     }
@@ -838,21 +814,19 @@
       }
 
       .strategy-intro-content {
-        .si-title {
+        h2 {
           font-size: 26px;
           margin-bottom: 24px;
         }
 
-        .si-subtitle {
+        h3 {
           font-size: 26px;
           margin-bottom: 15px;
         }
 
-        .si-description {
-          p {
-            font-size: 16px;
-            margin-bottom: 15px;
-          }
+        p {
+          font-size: 16px;
+          margin-bottom: 15px;
         }
       }
     }
@@ -860,20 +834,14 @@
 
   .strategy-prerequisite-section {
     .strategy-prerequisite-content {
-      .sp-title {
+      h2 {
         font-size: 28px;
         margin-bottom: 24px;
       }
 
-      .sp-description {
-        p {
-          font-size: 16px;
-          margin-bottom: 20px;
-
-          br {
-            display: none;
-          }
-        }
+      p {
+        font-size: 16px;
+        margin-bottom: 20px;
       }
     }
   }
@@ -892,24 +860,24 @@
         }
       }
 
-      .testimonial-headline {
+      h2 {
         font-size: 28px;
         margin-bottom: 24px;
       }
 
-      .testimonial-body {
+      p {
         font-size: 16px;
         margin-bottom: 24px;
       }
 
-      .testimonial-author {
+      h4 {
         font-size: 24px;
       }
     }
   }
 
   .strategy-process-section {
-    .process-title {
+    h2 {
       font-size: 32px;
       margin-bottom: 32px;
     }
@@ -929,11 +897,11 @@
           }
         }
 
-        .process-step-title {
+        h4 {
           margin-bottom: 12px;
         }
 
-        .process-step-desc {
+        p {
           font-size: 14px;
           max-width: 100%;
         }
@@ -943,7 +911,7 @@
 
   // social media marketing page css start
   .management-overview-section {
-    .mo-heading {
+    h2 {
       font-size: 32px;
       margin-bottom: 32px;
     }
@@ -953,20 +921,20 @@
       flex-direction: column;
     }
 
-    .mo-text-content {
+    .management-text-content {
       padding-left: 0px;
 
-      .mo-subheading {
+      h3 {
         font-size: 26px;
         margin-bottom: 24px;
       }
 
-      .mo-familiar {
+      p {
         font-size: 16px;
         margin-bottom: 24px;
       }
 
-      .mo-list {
+      .management-list {
         li {
           font-size: 16px;
         }
@@ -975,36 +943,32 @@
   }
 
   .social-media-mobile-section {
-    .smm-heading {
+    h2 {
       font-size: 42px;
       margin-bottom: 32px;
     }
   }
 
   .health-mission-section {
-    .hm-content-row {
+    .health-mission-content-row {
       flex-direction: column;
       justify-content: center;
       text-align: center;
 
-      .hm-img-col {
+      .health-mission-img-col {
         margin: 0 auto;
       }
     }
   }
 
   .health-mission-section {
-    .hm-text-content {
-      .hm-subheading {
+    .health-mission-text-content {
+      h2 {
         font-size: 32px;
         margin-bottom: 32px;
-
-        br {
-          display: none;
-        }
       }
 
-      .hm-familiar {
+      p {
         font-size: 16px;
         margin-bottom: 0px;
       }
@@ -1012,34 +976,57 @@
   }
 
   .strategy-highlights-section {
-    .sh-row {
+    .strategy-highlights-row {
       padding-bottom: 60px;
       gap: 32px;
     }
 
-    .sh-text-content {
-      .sh-title {
+    .strategy-highlights-text-content {
+      h2 {
         font-size: 30px;
         margin-bottom: 15px;
       }
 
-      .sh-desc {
+      p {
         font-size: 16px;
         margin-bottom: 15px;
-
-        br {
-          display: none;
-        }
       }
     }
 
-    .sh-image-wrapper {
-      .sh-img {
+    .strategy-highlights-image-wrapper {
+      .strategy-highlights-img {
         max-width: 290px;
       }
     }
   }
+
+  .contact-form-section {
+    .contact-form-content {
+      h2 {
+        font-size: 38px;
+        margin-bottom: 24px;
+      }
+
+      h3 {
+        font-size: 24px;
+      }
+    }
+  }
+
+  // Contact page css start
+  .contact-banner-section {
+
+    h1,
+    h2 {
+      font-size: 52px;
+    }
+
+    .button-secondary {
+      margin-top: 45px;
+    }
+  }
 }
+
 
 @media (max-width: 767.55px) {
   .section-space-tb {
@@ -1305,109 +1292,6 @@
         .approach-item-title {
           font-size: 20px;
           margin-top: 15px;
-        }
-      }
-    }
-  }
-
-  .reviews-slider-section {
-    .reviews-left {
-      margin-bottom: 10px;
-
-      .excellent-text {
-        font-size: 20px;
-      }
-
-      .stars-row {
-        img {
-          width: 20px;
-          height: 20px;
-        }
-      }
-
-      .reviews-count {
-        font-size: 14px;
-      }
-
-      .google-logo {
-        img {
-          width: 90px;
-        }
-      }
-    }
-
-    .reviews-right {
-      .reviews-slider {
-        .slick-list {
-          border-radius: 10px;
-        }
-      }
-
-      .review-card {
-        padding: 15px;
-        border-radius: 10px;
-
-        .card-header {
-          gap: 10px;
-
-          .user-info {
-            gap: 12px;
-
-            .user-avatar {
-              width: 32px;
-              height: 32px;
-              min-width: 32px;
-            }
-
-            .user-meta {
-              .user-name {
-                font-size: 14px;
-              }
-
-              .date {
-                font-size: 12px;
-              }
-            }
-          }
-
-          .google-icon-card {
-            img {
-              width: 20px;
-              min-width: 20px;
-            }
-          }
-        }
-
-        .card-rating {
-          .stars {
-            img {
-              width: 16px;
-              min-width: 16px;
-            }
-          }
-
-          .blue-check {
-            img {
-              width: 14px;
-              min-width: 14px;
-            }
-          }
-        }
-
-        .review-text {
-          font-size: 14px;
-        }
-
-        .read-more {
-          font-size: 13px;
-          margin-top: 6px;
-        }
-      }
-
-      .trustindex-badge {
-        .badge-btn {
-          font-size: 11px;
-          padding: 4px 10px;
         }
       }
     }
@@ -2016,7 +1900,7 @@
   // Social Media Strategy Page
   .blueprint-behind-section {
     .blueprint-behind-content {
-      .blueprint-title {
+      h2 {
         font-size: 24px;
 
         br {
@@ -2039,21 +1923,19 @@
       }
 
       .strategy-intro-content {
-        .si-title {
+        h2 {
           font-size: 24px;
           margin-bottom: 20px;
         }
 
-        .si-subtitle {
+        h3 {
           font-size: 21px;
           margin-bottom: 20px;
         }
 
-        .si-description {
-          p {
-            font-size: 14px;
-            margin-bottom: 15px;
-          }
+        p {
+          font-size: 14px;
+          margin-bottom: 15px;
         }
       }
     }
@@ -2061,16 +1943,14 @@
 
   .strategy-prerequisite-section {
     .strategy-prerequisite-content {
-      .sp-title {
+      h2 {
         font-size: 24px;
         margin-bottom: 20px;
       }
 
-      .sp-description {
-        p {
-          font-size: 14px;
-          margin-bottom: 15px;
-        }
+      p {
+        font-size: 14px;
+        margin-bottom: 15px;
       }
     }
   }
@@ -2089,28 +1969,24 @@
         }
       }
 
-      .testimonial-headline {
+      h2 {
         font-size: 24px;
         margin-bottom: 20px;
       }
 
-      .testimonial-body {
+      p {
         font-size: 14px;
         margin-bottom: 20px;
-
-        br {
-          display: none;
-        }
       }
 
-      .testimonial-author {
+      h4 {
         font-size: 21px;
       }
     }
   }
 
   .strategy-process-section {
-    .process-title {
+    h2 {
       font-size: 24px;
       margin-bottom: 24px;
     }
@@ -2128,13 +2004,13 @@
           }
         }
 
-        .process-step-title {
+        h4 {
           font-size: 17px;
           margin-bottom: 10px;
           text-align: center;
         }
 
-        .process-step-desc {
+        p {
           font-size: 14px;
           text-align: center;
         }
@@ -2149,13 +2025,13 @@
       gap: 24px;
     }
 
-    .mo-heading {
+    h2 {
       font-size: 24px;
       margin-bottom: 24px;
     }
 
     .management-img-col {
-      .mo-img {
+      .management-img {
         max-width: unset;
         width: 100%;
       }
@@ -2165,18 +2041,18 @@
       width: 100%;
     }
 
-    .mo-text-content {
-      .mo-subheading {
+    .management-text-content {
+      h3 {
         font-size: 23.5px;
         margin-bottom: 20px;
       }
 
-      .mo-familiar {
+      p {
         font-size: 14px;
         margin-bottom: 12px;
       }
 
-      .mo-list {
+      .management-list {
         margin-left: 0px;
 
         li {
@@ -2192,52 +2068,52 @@
   }
 
   .social-media-mobile-section {
-    .smm-heading {
+    h2 {
       font-size: 28px;
       margin-bottom: 24px;
     }
   }
 
   .health-mission-section {
-    .hm-content-row {
+    .health-mission-content-row {
       gap: 24px;
     }
 
-    .hm-text-content {
-      .hm-subheading {
+    .health-mission-text-content {
+      h2 {
         font-size: 24px;
         margin-bottom: 15px;
       }
 
-      .hm-familiar {
+      p {
         font-size: 14px;
         line-height: 1.6;
       }
     }
 
-    .hm-img-col {
-      .hm-img {
+    .health-mission-img-col {
+      .health-mission-img {
         max-width: 100%;
       }
     }
   }
 
   .strategy-highlights-section {
-    .sh-row {
+    .strategy-highlights-row {
       padding-bottom: 60px;
       gap: 24px;
       flex-direction: column;
       padding-bottom: 24px;
 
-      &.sh-row-reverse {
+      &.strategy-highlights-row-reverse {
         flex-direction: column;
       }
     }
 
-    .sh-text-content {
+    .strategy-highlights-text-content {
       text-align: center;
 
-      .sh-title {
+      h2 {
         font-size: 24px;
         margin-bottom: 15px;
         line-height: 1.3;
@@ -2247,7 +2123,7 @@
         }
       }
 
-      .sh-desc {
+      p {
         font-size: 14px;
         margin-bottom: 15px;
 
@@ -2257,9 +2133,90 @@
       }
     }
 
-    .sh-image-wrapper {
-      .sh-img {
+    .strategy-highlights-image-wrapper {
+      .strategy-highlights-img {
         max-width: 290px;
+      }
+    }
+  }
+
+  // Contact page css start
+  .contact-banner-section {
+    .common-banner-content {
+      padding: 32px 0px;
+    }
+
+    h1,
+    h2 {
+      font-size: 29px;
+    }
+
+    .button-secondary {
+      font-size: 15px;
+      margin-top: 28px;
+    }
+  }
+
+  .contact-form-section {
+    .contact-form-content {
+      h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+      }
+
+      h3 {
+        font-size: 20px;
+        line-height: 1.4;
+      }
+    }
+
+    .contact-main-form {
+      margin-top: 24px;
+
+      .button-black {
+        font-size: 16px;
+        min-width: 250px;
+        margin-top: 17px;
+      }
+    }
+
+    .form-fields {
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-control,
+      .form-select {
+        font-size: 14px;
+        padding: 5px 15px;
+        min-height: 46px;
+        border-width: 1px;
+      }
+
+      .service-interest-group {
+        margin-top: 5px;
+        margin-bottom: 16px;
+
+        .form-label {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+
+        .form-check {
+          .form-check-input {
+            width: 18px;
+            height: 18px;
+          }
+
+          .form-check-label {
+            font-size: 14px;
+            padding-left: 12px;
+          }
+        }
+      }
+
+      .select-wrapper {
+        margin-top: 0px;
       }
     }
   }

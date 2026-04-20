@@ -40,6 +40,23 @@ $cta_title = get_field( 'strategy_cta_title' );
 $cta_subtitle = get_field( 'strategy_cta_subtitle' );
 $cta_button_text = get_field( 'strategy_cta_button_text' );
 $cta_button_link = get_field( 'strategy_cta_button_link' );
+
+// CTA Fallbacks
+if ( ! $cta_bg_image ) {
+	$cta_bg_image = get_template_directory_uri() . '/assets/images/book-demo-bg-image.jpg';
+}
+if ( ! $cta_title ) {
+	$cta_title = '<span class="font-style-italic">Ready</span> to build a <span class="font-style-italic">strategy</span> that actually <span class="font-style-italic">works</span> for your <span class="font-style-italic">business?</span>';
+}
+if ( ! $cta_subtitle ) {
+	$cta_subtitle = 'Let’s elevate your socials together. Book your complimentary 15-minute call.';
+}
+if ( ! $cta_button_text ) {
+	$cta_button_text = 'BOOK NOW';
+}
+if ( ! $cta_button_link ) {
+	$cta_button_link = '#';
+}
 ?>
 
 <main>
@@ -50,7 +67,7 @@ $cta_button_link = get_field( 'strategy_cta_button_link' );
         <div class="container">
           <div class="common-banner-content text-center">
             <h1 class="common-banner-title" data-aos="fade-up">
-              <span class="font-style-italic"><?php echo wp_kses_post( $banner_title ); ?></span>
+                <?php echo wp_kses_post( $banner_title ); ?>
             </h1>
           </div>
         </div>
@@ -76,15 +93,13 @@ $cta_button_link = get_field( 'strategy_cta_button_link' );
             <img src="<?php echo esc_url( $intro_image ); ?>" alt="Strategy Intro" width="529" height="640">
           </div>
           <div class="strategy-intro-content">
-            <h2 class="si-title">
+            <h2>
                 <?php echo wp_kses_post( $intro_title ); ?>
             </h2>
             <?php if ( $intro_subtitle ) : ?>
-                <h3 class="si-subtitle"><?php echo wp_kses_post( $intro_subtitle ); ?></h3>
+                <h3><?php echo wp_kses_post( $intro_subtitle ); ?></h3>
             <?php endif; ?>
-            <div class="si-description">
-                <?php echo wp_kses_post( $intro_description ); ?>
-            </div>
+            <?php echo wp_kses_post( $intro_description ); ?>
           </div>
         </div>
       </div>
@@ -124,7 +139,7 @@ $cta_button_link = get_field( 'strategy_cta_button_link' );
               <div class="testimonial-body">
                 <?php echo wp_kses_post( $testimonial['testimonial_body'] ); ?>
               </div>
-              <p class="testimonial-author"><?php echo esc_html( $testimonial['testimonial_author'] ); ?></p>
+              <h4><?php echo esc_html( $testimonial['testimonial_author'] ); ?></h4>
             </div>
           <?php endforeach; ?>
         </div>
@@ -172,17 +187,14 @@ $cta_button_link = get_field( 'strategy_cta_button_link' );
 
     <!-- social media strategy Social CTA Section -->
     <section class="social-cta-section">
-      <div class="social-cta-parallax" style="background-image: url('<?php echo esc_url( $cta_bg_image ?: get_template_directory_uri() . '/assets/images/book-demo-bg-image.jpg' ); ?>');">
+      <div class="social-cta-parallax">
+        <img src="<?php echo esc_url( $cta_bg_image ); ?>" alt="social cta background image" class="social-cta-bg-img">
         <div class="container">
           <div class="social-cta-content text-center">
-            <h2 class="social-cta-title">
-              <?php echo wp_kses_post( $cta_title ); ?>
-            </h2>
-            <div class="cta-subtitle">
-              <?php echo wp_kses_post( $cta_subtitle ); ?>
-            </div>
+            <h2><?php echo wp_kses_post( $cta_title ); ?></h2>
+            <p><?php echo wp_kses_post( $cta_subtitle ); ?></p>
             <div class="cta-btn-wrapper">
-              <a href="<?php echo esc_url( $cta_button_link ?: '#' ); ?>" class="button-primary"><?php echo esc_html( $cta_button_text ?: 'BOOK NOW' ); ?></a>
+              <a href="<?php echo esc_url( $cta_button_link ); ?>" class="button-primary"><?php echo esc_html( $cta_button_text ); ?></a>
             </div>
           </div>
         </div>

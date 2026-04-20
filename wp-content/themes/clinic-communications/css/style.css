@@ -1131,251 +1131,6 @@ img {
   background-color: #F6F5F0;
   font-family: "Poppins", sans-serif;
 }
-.reviews-slider-section .reviews-left {
-  text-align: center;
-  padding: 0 15px;
-  margin-top: 65px;
-}
-.reviews-slider-section .reviews-left .excellent-text {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 6px;
-  color: #000000;
-}
-.reviews-slider-section .reviews-left .stars-row {
-  display: flex;
-  justify-content: center;
-  gap: 1px;
-  margin-bottom: 5px;
-}
-.reviews-slider-section .reviews-left .stars-row img {
-  width: 30px;
-  height: 30px;
-  object-fit: fill;
-}
-.reviews-slider-section .reviews-left .reviews-count {
-  font-size: 15px;
-  color: #000000;
-  margin-bottom: 8px;
-}
-.reviews-slider-section .reviews-left .reviews-count .reviews-link {
-  color: #000000;
-  text-decoration: underline;
-  font-weight: 600;
-  transition: all 0.3s ease-in-out;
-}
-.reviews-slider-section .reviews-left .reviews-count .reviews-link:hover {
-  text-decoration: none;
-}
-.reviews-slider-section .reviews-left .google-logo {
-  display: flex;
-  justify-content: center;
-}
-.reviews-slider-section .reviews-left .google-logo img {
-  width: 110px;
-  height: auto;
-}
-.reviews-slider-section .reviews-right {
-  position: relative;
-  width: 100%;
-}
-.reviews-slider-section .reviews-right .slider-container {
-  position: relative;
-  padding: 0 15px;
-}
-.reviews-slider-section .reviews-right .reviews-slider .slick-list {
-  margin: 0 -15px;
-  padding-top: 15px;
-  border-radius: 12px;
-}
-.reviews-slider-section .reviews-right .reviews-slider .slick-slide {
-  padding: 0 8px;
-  outline: none;
-}
-.reviews-slider-section .reviews-right .review-card {
-  background: #f4f4f4;
-  padding: 20px;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-.reviews-slider-section .reviews-right .review-card:hover {
-  transform: translateY(-5px);
-}
-.reviews-slider-section .reviews-right .review-card .card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 10px;
-}
-.reviews-slider-section .reviews-right .review-card .card-header .user-info {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-.reviews-slider-section .reviews-right .review-card .card-header .user-info .user-avatar {
-  width: 40px;
-  height: 40px;
-  min-width: 40px;
-  border-radius: 50%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.reviews-slider-section .reviews-right .review-card .card-header .user-info .user-avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.reviews-slider-section .reviews-right .review-card .card-header .user-info .user-meta .user-name {
-  font-size: 15px;
-  font-weight: 600;
-  margin: 0;
-  color: #000000;
-  text-align: left;
-}
-.reviews-slider-section .reviews-right .review-card .card-header .user-info .user-meta .date {
-  font-size: 13px;
-  color: #767676;
-  display: block;
-  text-align: left;
-  margin-top: 2px;
-}
-.reviews-slider-section .reviews-right .review-card .card-header .google-icon-card img {
-  width: 24px;
-  height: auto;
-  min-width: 24px;
-}
-.reviews-slider-section .reviews-right .review-card .card-rating {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  margin: 11px 0px;
-}
-.reviews-slider-section .reviews-right .review-card .card-rating .stars {
-  display: flex;
-  align-items: center;
-  gap: 1px;
-}
-.reviews-slider-section .reviews-right .review-card .card-rating .stars img {
-  width: 17px;
-  height: auto;
-  min-width: 17px;
-}
-.reviews-slider-section .reviews-right .review-card .card-rating .blue-check img {
-  width: 15px;
-  height: auto;
-  min-width: 15px;
-}
-.reviews-slider-section .reviews-right .review-card .review-text {
-  font-size: 15px;
-  color: #000000;
-  margin: 0px;
-  flex-grow: 1;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-align: left;
-}
-.reviews-slider-section .reviews-right .review-card .review-text.expanded {
-  -webkit-line-clamp: unset;
-  line-clamp: unset;
-  display: block;
-}
-.reviews-slider-section .reviews-right .review-card .read-more {
-  font-size: 13.5px;
-  margin-top: 8px;
-  color: #767676;
-  text-decoration: none;
-  font-weight: 400;
-  text-align: left;
-  display: inline-flex;
-  transition: all 0.3s ease-in-out;
-}
-.reviews-slider-section .reviews-right .review-card .read-more:hover {
-  text-decoration: underline;
-  color: #000000;
-}
-.reviews-slider-section .reviews-right .slider-arrow {
-  position: absolute;
-  top: 118px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 10;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-  background-color: #ffffff;
-  outline: 2px solid #ffffff;
-  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.05);
-}
-.reviews-slider-section .reviews-right .slider-arrow:hover {
-  background-color: #4d4d4d;
-  outline-color: #424242;
-}
-.reviews-slider-section .reviews-right .slider-arrow:hover:before {
-  border-color: #ffffff;
-}
-.reviews-slider-section .reviews-right .slider-arrow:before {
-  content: "";
-  display: block;
-  position: absolute;
-  border-style: solid;
-  border-width: 0;
-  border-bottom-width: 2px;
-  border-left-width: 2px;
-  border-color: #575757;
-  width: 10px;
-  height: 10px;
-  top: 50%;
-  left: 50%;
-  margin-left: 2px;
-  transform: translate(-50%, -50%) rotate(45deg);
-  transition: all 200ms ease-out;
-}
-.reviews-slider-section .reviews-right .slider-arrow.prev-arrow {
-  left: 0px;
-}
-.reviews-slider-section .reviews-right .slider-arrow.next-arrow {
-  right: 0px;
-}
-.reviews-slider-section .reviews-right .slider-arrow.next-arrow:before {
-  transform: translate(-50%, -50%) rotate(-135deg);
-  margin-left: -2px;
-}
-.reviews-slider-section .reviews-right .trustindex-badge {
-  margin-top: 12px;
-  display: flex;
-  justify-content: flex-end;
-}
-.reviews-slider-section .reviews-right .trustindex-badge .badge-btn {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  background: #157351;
-  color: #ffffff;
-  padding: 4px 14px;
-  border-radius: 3px;
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: 600;
-  transition: all 0.3s ease-in-out;
-}
-.reviews-slider-section .reviews-right .trustindex-badge .badge-btn img {
-  width: 13px;
-  height: auto;
-  min-width: 13px;
-}
 
 .social-media-section {
   background-color: #F6F5F0;
@@ -1670,15 +1425,22 @@ img {
 }
 
 .social-cta-section .social-cta-parallax {
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   padding: 120px 15px 70px 15px;
+  overflow: hidden;
+  clip-path: inset(0);
+}
+.social-cta-section .social-cta-parallax .social-cta-bg-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
 }
 .social-cta-section .social-cta-content {
   position: relative;
@@ -2058,7 +1820,11 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
 .blueprint-behind-section {
   background-color: #F6F5F0;
 }
-.blueprint-behind-section .blueprint-behind-content .blueprint-title {
+.blueprint-behind-section .blueprint-behind-content {
+  max-width: 810px;
+  margin: 0 auto;
+}
+.blueprint-behind-section .blueprint-behind-content h2 {
   font-family: "Playfair Display", serif;
   font-size: 50px;
   font-weight: 400;
@@ -2083,15 +1849,16 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
 .strategy-intro-section .strategy-intro-row .strategy-intro-content {
   flex: 1;
 }
-.strategy-intro-section .strategy-intro-row .strategy-intro-content .si-title {
+.strategy-intro-section .strategy-intro-row .strategy-intro-content h2 {
   font-family: "Playfair Display", serif;
   font-size: 41px;
   margin-bottom: 40px;
   color: #ffffff;
   letter-spacing: -0.05em;
   font-weight: 400;
+  max-width: 370px;
 }
-.strategy-intro-section .strategy-intro-row .strategy-intro-content .si-subtitle {
+.strategy-intro-section .strategy-intro-row .strategy-intro-content h3 {
   font-family: "Playfair Display", serif;
   font-size: 41px;
   margin-bottom: 30px;
@@ -2099,34 +1866,37 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   letter-spacing: -0.05em;
   font-weight: 400;
 }
-.strategy-intro-section .strategy-intro-row .strategy-intro-content .si-description {
-  max-width: 430px;
-}
-.strategy-intro-section .strategy-intro-row .strategy-intro-content .si-description p {
+.strategy-intro-section .strategy-intro-row .strategy-intro-content p {
   font-size: 19px;
   line-height: 1.9em;
   margin-bottom: 40px;
   color: #ffffff;
 }
-.strategy-intro-section .strategy-intro-row .strategy-intro-content .si-description p:last-child {
+.strategy-intro-section .strategy-intro-row .strategy-intro-content p:last-child {
   margin-bottom: 0;
 }
 
 .strategy-prerequisite-section {
   background-color: #F6F5F0;
 }
-.strategy-prerequisite-section .strategy-prerequisite-content .sp-title {
+.strategy-prerequisite-section .strategy-prerequisite-content h2 {
   font-family: "Playfair Display", serif;
   font-size: 55px;
   font-weight: 400;
   margin-bottom: 54px;
   letter-spacing: -0.05em;
+  max-width: 830px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.strategy-prerequisite-section .strategy-prerequisite-content .sp-description p {
+.strategy-prerequisite-section .strategy-prerequisite-content p {
   font-size: 20px;
   margin-bottom: 32px;
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.strategy-prerequisite-section .strategy-prerequisite-content .sp-description p:last-child {
+.strategy-prerequisite-section .strategy-prerequisite-content p:last-child {
   margin-bottom: 0;
 }
 
@@ -2149,21 +1919,27 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   width: 62px;
   height: auto;
 }
-.strategy-testimonials-section .testimonial-item .testimonial-headline {
+.strategy-testimonials-section .testimonial-item h2 {
   font-family: "Playfair Display", serif;
   font-size: 42px;
   font-weight: 400;
   margin-bottom: 36px;
   color: #f6f5f0;
   letter-spacing: -0.05em;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.strategy-testimonials-section .testimonial-item .testimonial-body {
+.strategy-testimonials-section .testimonial-item p {
   font-size: 17px;
   margin-bottom: 43px;
   color: #fafafa;
   line-height: 1.6;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.strategy-testimonials-section .testimonial-item .testimonial-author {
+.strategy-testimonials-section .testimonial-item h4 {
   font-family: "Playfair Display", serif;
   font-size: 32px;
   font-weight: 400;
@@ -2175,7 +1951,7 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
 .strategy-process-section {
   background-color: #F6F5F0;
 }
-.strategy-process-section .process-title {
+.strategy-process-section h2 {
   font-family: "Playfair Display", serif;
   font-size: 55px;
   margin-bottom: 70px;
@@ -2197,13 +1973,13 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   display: flex;
   justify-content: center;
 }
-.strategy-process-section .strategy-process-row .process-item .process-step-title {
+.strategy-process-section .strategy-process-row .process-item h4 {
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 24px;
   text-align: left;
 }
-.strategy-process-section .strategy-process-row .process-item .process-step-desc {
+.strategy-process-section .strategy-process-row .process-item p {
   font-size: 15px;
   text-align: left;
   margin: 0px;
@@ -2212,7 +1988,7 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
 .management-overview-section {
   background-color: #F6F5F0;
 }
-.management-overview-section .mo-heading {
+.management-overview-section h2 {
   font-family: "Playfair Display", serif;
   font-size: 50px;
   font-weight: 400;
@@ -2225,28 +2001,28 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   margin: 0 auto;
   gap: 40px;
 }
-.management-overview-section .management-img-col .mo-img {
+.management-overview-section .management-img-col .management-img {
   max-width: 500px;
 }
 .management-overview-section .management-text-col {
   flex: 1;
 }
-.management-overview-section .mo-text-content .mo-subheading {
+.management-overview-section .management-text-content h3 {
   font-family: "Playfair Display", serif;
   font-size: 39px;
   font-weight: 400;
   margin-bottom: 55px;
 }
-.management-overview-section .mo-text-content .mo-familiar {
+.management-overview-section .management-text-content p {
   font-size: 20px;
   margin-bottom: 45px;
   color: #000000;
 }
-.management-overview-section .mo-text-content .mo-list {
+.management-overview-section .management-text-content .management-list {
   padding-left: 0;
   margin: 0 0 0 10px;
 }
-.management-overview-section .mo-text-content .mo-list li {
+.management-overview-section .management-text-content .management-list li {
   position: relative;
   margin-left: 26px;
   font-size: 20px;
@@ -2254,7 +2030,7 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   margin-bottom: 0px;
   color: #000000;
 }
-.management-overview-section .mo-text-content .mo-list li:last-child {
+.management-overview-section .management-text-content .management-list li:last-child {
   margin-bottom: 0;
 }
 
@@ -2262,43 +2038,44 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   background-color: #2E2E2C;
   color: #ffffff;
 }
-.social-media-mobile-section .smm-heading {
+.social-media-mobile-section h2 {
   font-family: "Playfair Display", serif;
   font-size: 75px;
   font-weight: 400;
   color: #ffffff;
   margin-bottom: 40px;
-}
-.social-media-mobile-section .smm-img-wrapper {
   text-align: center;
 }
-.social-media-mobile-section .smm-img-wrapper .smm-img {
+.social-media-mobile-section .social-media-img-wrapper {
+  text-align: center;
+}
+.social-media-mobile-section .social-media-img-wrapper .social-media-img {
   margin: 0 auto;
 }
 
 .health-mission-section {
   background-color: #F6F5F0;
 }
-.health-mission-section .hm-content-row {
+.health-mission-section .health-mission-content-row {
   display: flex;
   align-items: center;
   margin: 0 auto;
   gap: 40px;
 }
-.health-mission-section .hm-img-col .hm-img {
+.health-mission-section .health-mission-img-col .health-mission-img {
   max-width: 500px;
 }
-.health-mission-section .hm-text-col {
+.health-mission-section .health-mission-text-col {
   flex: 1;
 }
-.health-mission-section .hm-text-content .hm-subheading {
+.health-mission-section .health-mission-text-content h2 {
   font-family: "Playfair Display", serif;
   font-size: 55px;
   font-weight: 400;
   margin-bottom: 50px;
   letter-spacing: -0.05em;
 }
-.health-mission-section .hm-text-content .hm-familiar {
+.health-mission-section .health-mission-text-content p {
   font-size: 20px;
   line-height: 1.9em;
   margin-bottom: 0px;
@@ -2310,7 +2087,7 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   color: #ffffff;
   overflow: hidden;
 }
-.strategy-highlights-section .sh-row {
+.strategy-highlights-section .strategy-highlights-row {
   display: flex;
   align-items: center;
   padding-bottom: 80px;
@@ -2318,35 +2095,204 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   margin: 0 auto;
   gap: 50px;
 }
-.strategy-highlights-section .sh-row:last-child {
+.strategy-highlights-section .strategy-highlights-row:last-child {
   padding-bottom: 0;
 }
-.strategy-highlights-section .sh-row.sh-row-reverse {
+.strategy-highlights-section .strategy-highlights-row.strategy-highlights-row-reverse {
   flex-direction: row-reverse;
 }
-.strategy-highlights-section .sh-text-col {
+.strategy-highlights-section .strategy-highlights-text-col {
   flex: 1;
 }
-.strategy-highlights-section .sh-text-content .sh-title {
+.strategy-highlights-section .strategy-highlights-text-content h2 {
   font-family: "Playfair Display", serif;
   font-size: 50px;
   font-weight: 400;
   color: #F6F5F0;
   margin-bottom: 34px;
 }
-.strategy-highlights-section .sh-text-content .sh-desc {
+.strategy-highlights-section .strategy-highlights-text-content p {
   font-size: 17px;
   color: #FAFAFA;
   margin-bottom: 24px;
 }
-.strategy-highlights-section .sh-text-content .sh-desc:last-child {
+.strategy-highlights-section .strategy-highlights-text-content p:last-child {
   margin-bottom: 0;
 }
-.strategy-highlights-section .sh-image-wrapper .sh-img {
+.strategy-highlights-section .strategy-highlights-image-wrapper .strategy-highlights-img {
   max-width: 394px;
   width: 100%;
   object-fit: cover;
   border-radius: 0px;
+}
+
+.contact-banner-section h1,
+.contact-banner-section h2 {
+  max-width: 700px;
+  font-size: 60px;
+  margin: 0 auto;
+}
+.contact-banner-section .button-secondary {
+  font-size: 18px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-top: 66px;
+  background: rgb(246, 245, 240);
+  border-color: #F6F5F0;
+}
+.contact-banner-section .button-secondary:hover {
+  background: #E8E6DD;
+  border-color: #E8E6DD;
+}
+
+.contact-form-section {
+  background-color: #FAFAFA;
+}
+.contact-form-section .contact-form-content h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 37px;
+  text-align: center;
+}
+.contact-form-section .contact-form-content h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  max-width: 480px;
+  font-style: italic;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-form-section .contact-main-form {
+  max-width: 835px;
+  margin: 80px auto 0;
+  text-align: left;
+}
+.contact-form-section .contact-main-form .button-black {
+  letter-spacing: normal;
+  margin-top: 50px;
+  font-size: 18px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.contact-form-section .contact-main-form .button-black:focus {
+  border-color: rgb(46, 46, 44);
+  background-color: #000000;
+}
+.contact-form-section .form-fields .form-group {
+  margin-bottom: 16px;
+}
+.contact-form-section .form-fields .form-control,
+.contact-form-section .form-fields .form-select {
+  border-radius: 40px;
+  padding: 10px 15px;
+  border: 2px solid rgb(55, 59, 77);
+  font-size: 15px;
+  background-color: transparent;
+  color: #000000;
+  font-weight: 400;
+  min-height: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+.contact-form-section .form-fields .form-control::placeholder,
+.contact-form-section .form-fields .form-select::placeholder {
+  color: rgba(0, 0, 0, 0.9);
+}
+.contact-form-section .form-fields .form-control:focus,
+.contact-form-section .form-fields .form-select:focus {
+  border-color: #000000;
+  background-color: #fff;
+  box-shadow: none;
+}
+.contact-form-section .form-fields textarea.form-control {
+  border-radius: 24px;
+  resize: none;
+  padding-top: 12px;
+}
+.contact-form-section .form-fields .service-interest-group {
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+.contact-form-section .form-fields .service-interest-group .form-label {
+  font-size: 20px;
+  color: #2e2e2c;
+  margin-bottom: 15px;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+}
+.contact-form-section .form-fields .service-interest-group .radio-group-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.contact-form-section .form-fields .service-interest-group .form-check {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.contact-form-section .form-fields .service-interest-group .form-check .form-check-input {
+  width: 18px;
+  height: 18px;
+  margin-top: 0;
+  border: 1px solid rgb(55, 59, 77);
+  background-color: transparent;
+  cursor: pointer;
+  float: none;
+  margin: 0px;
+  border-radius: 50%;
+  position: relative;
+  appearance: none;
+}
+.contact-form-section .form-fields .service-interest-group .form-check .form-check-input:checked {
+  background-color: transparent;
+  border-color: #2e2e2c;
+}
+.contact-form-section .form-fields .service-interest-group .form-check .form-check-input:checked::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  width: 5px;
+  height: 9px;
+  border: solid #2e2e2c;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  display: block;
+}
+.contact-form-section .form-fields .service-interest-group .form-check .form-check-input:focus {
+  box-shadow: none;
+  border-color: #000000;
+}
+.contact-form-section .form-fields .service-interest-group .form-check .form-check-input:active {
+  filter: none;
+}
+.contact-form-section .form-fields .service-interest-group .form-check .form-check-label {
+  font-size: 17px;
+  color: #2e2e2c;
+  cursor: pointer;
+  padding-left: 15px;
+  line-height: normal;
+}
+.contact-form-section .form-fields .select-wrapper {
+  position: relative;
+  margin-top: 16px;
+}
+.contact-form-section .form-fields .select-wrapper .form-select {
+  appearance: none;
+  cursor: pointer;
+  padding-right: 50px;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.9997 7.05857C18.0046 6.85222 17.9404 6.64958 17.8158 6.47883C17.6912 6.30807 17.5125 6.17769 17.3046 6.1058C17.0967 6.03392 16.87 6.0241 16.6559 6.07772C16.4417 6.13133 16.251 6.24572 16.1099 6.40497L10.5173 12.4813L4.92658 6.40497C4.83959 6.2948 4.72915 6.20255 4.60209 6.13397C4.47502 6.06539 4.33407 6.02198 4.18813 6.00644C4.0422 5.9909 3.89443 6.00357 3.754 6.04366C3.61358 6.08375 3.48352 6.1504 3.37205 6.23943C3.26058 6.32846 3.17015 6.43795 3.10625 6.56105C3.04235 6.68415 3.00646 6.8182 3.00079 6.95482C2.99513 7.09143 3.01975 7.22766 3.07327 7.35498C3.12679 7.48229 3.20798 7.59795 3.31175 7.69471L9.7067 14.6516C9.80686 14.7608 9.93119 14.8485 10.0713 14.9087C10.2114 14.9688 10.3639 15 10.5182 15C10.6725 15 10.825 14.9688 10.9652 14.9087C11.1053 14.8485 11.2297 14.7608 11.3299 14.6516L17.731 7.69471C17.8987 7.51897 17.9938 7.29356 17.9997 7.05857Z' fill='%232E2E2C'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 16px;
+}
+.contact-form-section .form-fields .select-wrapper .form-select option {
+  color: #ffcb05;
+  cursor: pointer;
 }
 
 @media (min-width: 1200px) {
@@ -2369,24 +2315,21 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   .social-post-modal .social-modal-right {
     height: 500px;
   }
-  .strategy-intro-section .strategy-intro-row .strategy-intro-content .si-description p {
+  .strategy-intro-section .strategy-intro-row .strategy-intro-content p {
     line-height: 1.6em;
     margin-bottom: 24px;
   }
-  .management-overview-section .management-img-col .mo-img {
+  .management-overview-section .management-img-col .management-img {
     max-width: 410px;
   }
-  .management-overview-section .mo-text-content .mo-list li {
+  .management-overview-section .management-text-content .management-list li {
     font-size: 18px;
   }
-  .health-mission-section .hm-img-col .hm-img {
+  .health-mission-section .health-mission-img-col .health-mission-img {
     max-width: 410px;
   }
-  .health-mission-section .hm-text-content .hm-subheading {
+  .health-mission-section .health-mission-text-content h2 {
     font-size: 50px;
-  }
-  .health-mission-section .hm-text-content .hm-familiar br {
-    display: none;
   }
 }
 @media (max-width: 991.55px) {
@@ -2695,21 +2638,6 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   .approach-section .approach-grid .approach-item .approach-item-title {
     margin-top: 24px;
   }
-  .reviews-slider-section .reviews-left {
-    margin-top: 0px;
-    margin-bottom: 24px;
-  }
-  .reviews-slider-section .reviews-left .excellent-text {
-    font-size: 22px;
-    margin-bottom: 8px;
-  }
-  .reviews-slider-section .reviews-left .stars-row {
-    margin-bottom: 8px;
-  }
-  .reviews-slider-section .reviews-left .stars-row img {
-    width: 24px;
-    height: 24px;
-  }
   .social-media-section .social-title {
     text-align: center;
     font-size: 28px;
@@ -2724,7 +2652,10 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   }
   .social-cta-section .social-cta-parallax {
     padding: 80px 0px;
-    background-attachment: scroll;
+    clip-path: none;
+  }
+  .social-cta-section .social-cta-parallax .social-cta-bg-img {
+    position: absolute;
   }
   .social-cta-section .social-cta-content h2 {
     font-size: 38px;
@@ -2900,7 +2831,7 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   .how-we-work-section .how-we-work-item p {
     max-width: 100%;
   }
-  .blueprint-behind-section .blueprint-behind-content .blueprint-title {
+  .blueprint-behind-section .blueprint-behind-content h2 {
     font-size: 28px;
   }
   .strategy-intro-section .strategy-intro-row {
@@ -2911,28 +2842,25 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   .strategy-intro-section .strategy-intro-row .strategy-intro-image {
     max-width: 360px;
   }
-  .strategy-intro-section .strategy-intro-row .strategy-intro-content .si-title {
+  .strategy-intro-section .strategy-intro-row .strategy-intro-content h2 {
     font-size: 26px;
     margin-bottom: 24px;
   }
-  .strategy-intro-section .strategy-intro-row .strategy-intro-content .si-subtitle {
+  .strategy-intro-section .strategy-intro-row .strategy-intro-content h3 {
     font-size: 26px;
     margin-bottom: 15px;
   }
-  .strategy-intro-section .strategy-intro-row .strategy-intro-content .si-description p {
+  .strategy-intro-section .strategy-intro-row .strategy-intro-content p {
     font-size: 16px;
     margin-bottom: 15px;
   }
-  .strategy-prerequisite-section .strategy-prerequisite-content .sp-title {
+  .strategy-prerequisite-section .strategy-prerequisite-content h2 {
     font-size: 28px;
     margin-bottom: 24px;
   }
-  .strategy-prerequisite-section .strategy-prerequisite-content .sp-description p {
+  .strategy-prerequisite-section .strategy-prerequisite-content p {
     font-size: 16px;
     margin-bottom: 20px;
-  }
-  .strategy-prerequisite-section .strategy-prerequisite-content .sp-description p br {
-    display: none;
   }
   .strategy-testimonials-section .testimonials-wrapper {
     gap: 60px;
@@ -2943,18 +2871,18 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   .strategy-testimonials-section .testimonial-item .testimonial-stars img {
     width: 50px;
   }
-  .strategy-testimonials-section .testimonial-item .testimonial-headline {
+  .strategy-testimonials-section .testimonial-item h2 {
     font-size: 28px;
     margin-bottom: 24px;
   }
-  .strategy-testimonials-section .testimonial-item .testimonial-body {
+  .strategy-testimonials-section .testimonial-item p {
     font-size: 16px;
     margin-bottom: 24px;
   }
-  .strategy-testimonials-section .testimonial-item .testimonial-author {
+  .strategy-testimonials-section .testimonial-item h4 {
     font-size: 24px;
   }
-  .strategy-process-section .process-title {
+  .strategy-process-section h2 {
     font-size: 32px;
     margin-bottom: 32px;
   }
@@ -2970,14 +2898,14 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
     width: 90px;
     height: auto;
   }
-  .strategy-process-section .strategy-process-row .process-item .process-step-title {
+  .strategy-process-section .strategy-process-row .process-item h4 {
     margin-bottom: 12px;
   }
-  .strategy-process-section .strategy-process-row .process-item .process-step-desc {
+  .strategy-process-section .strategy-process-row .process-item p {
     font-size: 14px;
     max-width: 100%;
   }
-  .management-overview-section .mo-heading {
+  .management-overview-section h2 {
     font-size: 32px;
     margin-bottom: 32px;
   }
@@ -2985,60 +2913,68 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
     max-width: 100%;
     flex-direction: column;
   }
-  .management-overview-section .mo-text-content {
+  .management-overview-section .management-text-content {
     padding-left: 0px;
   }
-  .management-overview-section .mo-text-content .mo-subheading {
+  .management-overview-section .management-text-content h3 {
     font-size: 26px;
     margin-bottom: 24px;
   }
-  .management-overview-section .mo-text-content .mo-familiar {
+  .management-overview-section .management-text-content p {
     font-size: 16px;
     margin-bottom: 24px;
   }
-  .management-overview-section .mo-text-content .mo-list li {
+  .management-overview-section .management-text-content .management-list li {
     font-size: 16px;
   }
-  .social-media-mobile-section .smm-heading {
+  .social-media-mobile-section h2 {
     font-size: 42px;
     margin-bottom: 32px;
   }
-  .health-mission-section .hm-content-row {
+  .health-mission-section .health-mission-content-row {
     flex-direction: column;
     justify-content: center;
     text-align: center;
   }
-  .health-mission-section .hm-content-row .hm-img-col {
+  .health-mission-section .health-mission-content-row .health-mission-img-col {
     margin: 0 auto;
   }
-  .health-mission-section .hm-text-content .hm-subheading {
+  .health-mission-section .health-mission-text-content h2 {
     font-size: 32px;
     margin-bottom: 32px;
   }
-  .health-mission-section .hm-text-content .hm-subheading br {
-    display: none;
-  }
-  .health-mission-section .hm-text-content .hm-familiar {
+  .health-mission-section .health-mission-text-content p {
     font-size: 16px;
     margin-bottom: 0px;
   }
-  .strategy-highlights-section .sh-row {
+  .strategy-highlights-section .strategy-highlights-row {
     padding-bottom: 60px;
     gap: 32px;
   }
-  .strategy-highlights-section .sh-text-content .sh-title {
+  .strategy-highlights-section .strategy-highlights-text-content h2 {
     font-size: 30px;
     margin-bottom: 15px;
   }
-  .strategy-highlights-section .sh-text-content .sh-desc {
+  .strategy-highlights-section .strategy-highlights-text-content p {
     font-size: 16px;
     margin-bottom: 15px;
   }
-  .strategy-highlights-section .sh-text-content .sh-desc br {
-    display: none;
-  }
-  .strategy-highlights-section .sh-image-wrapper .sh-img {
+  .strategy-highlights-section .strategy-highlights-image-wrapper .strategy-highlights-img {
     max-width: 290px;
+  }
+  .contact-form-section .contact-form-content h2 {
+    font-size: 38px;
+    margin-bottom: 24px;
+  }
+  .contact-form-section .contact-form-content h3 {
+    font-size: 24px;
+  }
+  .contact-banner-section h1,
+  .contact-banner-section h2 {
+    font-size: 52px;
+  }
+  .contact-banner-section .button-secondary {
+    margin-top: 45px;
   }
 }
 @media (max-width: 767.55px) {
@@ -3215,69 +3151,6 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   .approach-section .approach-grid .approach-item .approach-item-title {
     font-size: 20px;
     margin-top: 15px;
-  }
-  .reviews-slider-section .reviews-left {
-    margin-bottom: 10px;
-  }
-  .reviews-slider-section .reviews-left .excellent-text {
-    font-size: 20px;
-  }
-  .reviews-slider-section .reviews-left .stars-row img {
-    width: 20px;
-    height: 20px;
-  }
-  .reviews-slider-section .reviews-left .reviews-count {
-    font-size: 14px;
-  }
-  .reviews-slider-section .reviews-left .google-logo img {
-    width: 90px;
-  }
-  .reviews-slider-section .reviews-right .reviews-slider .slick-list {
-    border-radius: 10px;
-  }
-  .reviews-slider-section .reviews-right .review-card {
-    padding: 15px;
-    border-radius: 10px;
-  }
-  .reviews-slider-section .reviews-right .review-card .card-header {
-    gap: 10px;
-  }
-  .reviews-slider-section .reviews-right .review-card .card-header .user-info {
-    gap: 12px;
-  }
-  .reviews-slider-section .reviews-right .review-card .card-header .user-info .user-avatar {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .reviews-slider-section .reviews-right .review-card .card-header .user-info .user-meta .user-name {
-    font-size: 14px;
-  }
-  .reviews-slider-section .reviews-right .review-card .card-header .user-info .user-meta .date {
-    font-size: 12px;
-  }
-  .reviews-slider-section .reviews-right .review-card .card-header .google-icon-card img {
-    width: 20px;
-    min-width: 20px;
-  }
-  .reviews-slider-section .reviews-right .review-card .card-rating .stars img {
-    width: 16px;
-    min-width: 16px;
-  }
-  .reviews-slider-section .reviews-right .review-card .card-rating .blue-check img {
-    width: 14px;
-    min-width: 14px;
-  }
-  .reviews-slider-section .reviews-right .review-card .review-text {
-    font-size: 14px;
-  }
-  .reviews-slider-section .reviews-right .review-card .read-more {
-    font-size: 13px;
-    margin-top: 6px;
-  }
-  .reviews-slider-section .reviews-right .trustindex-badge .badge-btn {
-    font-size: 11px;
-    padding: 4px 10px;
   }
   .social-media-section .social-title {
     font-size: 24px;
@@ -3704,10 +3577,10 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   .how-we-work-section .how-we-work-item p {
     font-size: 14px;
   }
-  .blueprint-behind-section .blueprint-behind-content .blueprint-title {
+  .blueprint-behind-section .blueprint-behind-content h2 {
     font-size: 24px;
   }
-  .blueprint-behind-section .blueprint-behind-content .blueprint-title br {
+  .blueprint-behind-section .blueprint-behind-content h2 br {
     display: none;
   }
   .strategy-intro-section .strategy-intro-row {
@@ -3720,23 +3593,23 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
     max-width: unset;
     margin: 0 auto;
   }
-  .strategy-intro-section .strategy-intro-row .strategy-intro-content .si-title {
+  .strategy-intro-section .strategy-intro-row .strategy-intro-content h2 {
     font-size: 24px;
     margin-bottom: 20px;
   }
-  .strategy-intro-section .strategy-intro-row .strategy-intro-content .si-subtitle {
+  .strategy-intro-section .strategy-intro-row .strategy-intro-content h3 {
     font-size: 21px;
     margin-bottom: 20px;
   }
-  .strategy-intro-section .strategy-intro-row .strategy-intro-content .si-description p {
+  .strategy-intro-section .strategy-intro-row .strategy-intro-content p {
     font-size: 14px;
     margin-bottom: 15px;
   }
-  .strategy-prerequisite-section .strategy-prerequisite-content .sp-title {
+  .strategy-prerequisite-section .strategy-prerequisite-content h2 {
     font-size: 24px;
     margin-bottom: 20px;
   }
-  .strategy-prerequisite-section .strategy-prerequisite-content .sp-description p {
+  .strategy-prerequisite-section .strategy-prerequisite-content p {
     font-size: 14px;
     margin-bottom: 15px;
   }
@@ -3749,21 +3622,18 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   .strategy-testimonials-section .testimonial-item .testimonial-stars img {
     width: 28px;
   }
-  .strategy-testimonials-section .testimonial-item .testimonial-headline {
+  .strategy-testimonials-section .testimonial-item h2 {
     font-size: 24px;
     margin-bottom: 20px;
   }
-  .strategy-testimonials-section .testimonial-item .testimonial-body {
+  .strategy-testimonials-section .testimonial-item p {
     font-size: 14px;
     margin-bottom: 20px;
   }
-  .strategy-testimonials-section .testimonial-item .testimonial-body br {
-    display: none;
-  }
-  .strategy-testimonials-section .testimonial-item .testimonial-author {
+  .strategy-testimonials-section .testimonial-item h4 {
     font-size: 21px;
   }
-  .strategy-process-section .process-title {
+  .strategy-process-section h2 {
     font-size: 24px;
     margin-bottom: 24px;
   }
@@ -3777,94 +3647,150 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   .strategy-process-section .strategy-process-row .process-item .process-icon img {
     width: 40px;
   }
-  .strategy-process-section .strategy-process-row .process-item .process-step-title {
+  .strategy-process-section .strategy-process-row .process-item h4 {
     font-size: 17px;
     margin-bottom: 10px;
     text-align: center;
   }
-  .strategy-process-section .strategy-process-row .process-item .process-step-desc {
+  .strategy-process-section .strategy-process-row .process-item p {
     font-size: 14px;
     text-align: center;
   }
   .management-overview-section .mo-content-row {
     gap: 24px;
   }
-  .management-overview-section .mo-heading {
+  .management-overview-section h2 {
     font-size: 24px;
     margin-bottom: 24px;
   }
-  .management-overview-section .management-img-col .mo-img {
+  .management-overview-section .management-img-col .management-img {
     max-width: unset;
     width: 100%;
   }
   .management-overview-section .management-text-col {
     width: 100%;
   }
-  .management-overview-section .mo-text-content .mo-subheading {
+  .management-overview-section .management-text-content h3 {
     font-size: 23.5px;
     margin-bottom: 20px;
   }
-  .management-overview-section .mo-text-content .mo-familiar {
+  .management-overview-section .management-text-content p {
     font-size: 14px;
     margin-bottom: 12px;
   }
-  .management-overview-section .mo-text-content .mo-list {
+  .management-overview-section .management-text-content .management-list {
     margin-left: 0px;
   }
-  .management-overview-section .mo-text-content .mo-list li {
+  .management-overview-section .management-text-content .management-list li {
     font-size: 14px;
     margin-left: 15px;
   }
-  .management-overview-section .mo-text-content .mo-list li br {
+  .management-overview-section .management-text-content .management-list li br {
     display: none;
   }
-  .social-media-mobile-section .smm-heading {
+  .social-media-mobile-section h2 {
     font-size: 28px;
     margin-bottom: 24px;
   }
-  .health-mission-section .hm-content-row {
+  .health-mission-section .health-mission-content-row {
     gap: 24px;
   }
-  .health-mission-section .hm-text-content .hm-subheading {
+  .health-mission-section .health-mission-text-content h2 {
     font-size: 24px;
     margin-bottom: 15px;
   }
-  .health-mission-section .hm-text-content .hm-familiar {
+  .health-mission-section .health-mission-text-content p {
     font-size: 14px;
     line-height: 1.6;
   }
-  .health-mission-section .hm-img-col .hm-img {
+  .health-mission-section .health-mission-img-col .health-mission-img {
     max-width: 100%;
   }
-  .strategy-highlights-section .sh-row {
+  .strategy-highlights-section .strategy-highlights-row {
     padding-bottom: 60px;
     gap: 24px;
     flex-direction: column;
     padding-bottom: 24px;
   }
-  .strategy-highlights-section .sh-row.sh-row-reverse {
+  .strategy-highlights-section .strategy-highlights-row.strategy-highlights-row-reverse {
     flex-direction: column;
   }
-  .strategy-highlights-section .sh-text-content {
+  .strategy-highlights-section .strategy-highlights-text-content {
     text-align: center;
   }
-  .strategy-highlights-section .sh-text-content .sh-title {
+  .strategy-highlights-section .strategy-highlights-text-content h2 {
     font-size: 24px;
     margin-bottom: 15px;
     line-height: 1.3;
   }
-  .strategy-highlights-section .sh-text-content .sh-title br {
+  .strategy-highlights-section .strategy-highlights-text-content h2 br {
     display: none;
   }
-  .strategy-highlights-section .sh-text-content .sh-desc {
+  .strategy-highlights-section .strategy-highlights-text-content p {
     font-size: 14px;
     margin-bottom: 15px;
   }
-  .strategy-highlights-section .sh-text-content .sh-desc br {
+  .strategy-highlights-section .strategy-highlights-text-content p br {
     display: none;
   }
-  .strategy-highlights-section .sh-image-wrapper .sh-img {
+  .strategy-highlights-section .strategy-highlights-image-wrapper .strategy-highlights-img {
     max-width: 290px;
+  }
+  .contact-banner-section .common-banner-content {
+    padding: 32px 0px;
+  }
+  .contact-banner-section h1,
+  .contact-banner-section h2 {
+    font-size: 29px;
+  }
+  .contact-banner-section .button-secondary {
+    font-size: 15px;
+    margin-top: 28px;
+  }
+  .contact-form-section .contact-form-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .contact-form-section .contact-form-content h3 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .contact-form-section .contact-main-form {
+    margin-top: 24px;
+  }
+  .contact-form-section .contact-main-form .button-black {
+    font-size: 16px;
+    min-width: 250px;
+    margin-top: 17px;
+  }
+  .contact-form-section .form-fields .form-group {
+    margin-bottom: 15px;
+  }
+  .contact-form-section .form-fields .form-control,
+  .contact-form-section .form-fields .form-select {
+    font-size: 14px;
+    padding: 5px 15px;
+    min-height: 46px;
+    border-width: 1px;
+  }
+  .contact-form-section .form-fields .service-interest-group {
+    margin-top: 5px;
+    margin-bottom: 16px;
+  }
+  .contact-form-section .form-fields .service-interest-group .form-label {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .contact-form-section .form-fields .service-interest-group .form-check .form-check-input {
+    width: 18px;
+    height: 18px;
+  }
+  .contact-form-section .form-fields .service-interest-group .form-check .form-check-label {
+    font-size: 14px;
+    padding-left: 12px;
+  }
+  .contact-form-section .form-fields .select-wrapper {
+    margin-top: 0px;
   }
 }
 
