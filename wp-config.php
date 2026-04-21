@@ -91,6 +91,8 @@ $table_prefix = 'wp_';
  */
 define( 'WP_DEBUG', false );
 
+define('DISALLOW_FILE_EDIT', true);
+
 /* Add any custom values between this line and the "stop editing" line. */
 
 
