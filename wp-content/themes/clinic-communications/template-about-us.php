@@ -161,11 +161,11 @@ if ( ! $featured_img_url ) {
 
 	<!-- about Social CTA Section -->
 	<?php
-	$cta_bg_image    = get_field( 'cta_bg_image' );
-	$cta_title       = get_field( 'cta_title' );
-	$cta_subtitle    = get_field( 'cta_subtitle' );
-	$cta_button_text = get_field( 'cta_button_text' );
-	$cta_button_link = get_field( 'cta_button_link' );
+	$cta_bg_image    = get_field( 'cta_bg_image' ) ?: get_theme_mod( 'clinic_communications_global_cta_bg' );
+	$cta_title       = get_field( 'cta_title' ) ?: get_theme_mod( 'clinic_communications_global_cta_title' );
+	$cta_subtitle    = get_field( 'cta_subtitle' ) ?: get_theme_mod( 'clinic_communications_global_cta_subtitle' );
+	$cta_button_text = get_field( 'cta_button_text' ) ?: get_theme_mod( 'clinic_communications_global_cta_btn_text' );
+	$cta_button_link = get_field( 'cta_button_link' ) ?: get_theme_mod( 'clinic_communications_global_cta_btn_link' );
 
 	if ( ! $cta_bg_image ) {
 		$cta_bg_image = get_template_directory_uri() . '/assets/images/book-demo-bg-image.jpg';

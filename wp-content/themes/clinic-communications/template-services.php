@@ -43,7 +43,7 @@ $services_reviews = get_field( 'services_reviews' );
         <div class="container">
           <div class="common-banner-content text-center">
             <h1 class="common-banner-title" data-aos="fade-up">
-              <span class="font-style-italic"><?php echo $banner_title; ?></span>
+              <?php echo wp_kses_post( $banner_title ); ?>
             </h1>
           </div>
         </div>
@@ -147,11 +147,11 @@ $services_reviews = get_field( 'services_reviews' );
 
     <!-- services Social CTA Section -->
     <?php
-    $cta_bg_image = get_field('services_cta_bg_image');
-    $cta_title = get_field('services_cta_title');
-    $cta_subtitle = get_field('services_cta_subtitle');
-    $cta_button_text = get_field('services_cta_button_text');
-    $cta_button_link = get_field('services_cta_button_link');
+    $cta_bg_image = get_field('services_cta_bg_image') ?: get_theme_mod('clinic_communications_global_cta_bg');
+    $cta_title = get_field('services_cta_title') ?: get_theme_mod('clinic_communications_global_cta_title');
+    $cta_subtitle = get_field('services_cta_subtitle') ?: get_theme_mod('clinic_communications_global_cta_subtitle');
+    $cta_button_text = get_field('services_cta_button_text') ?: get_theme_mod('clinic_communications_global_cta_btn_text');
+    $cta_button_link = get_field('services_cta_button_link') ?: get_theme_mod('clinic_communications_global_cta_btn_link');
     ?>
     <section class="social-cta-section">
       <div class="social-cta-parallax" style="background-image: url('<?php echo esc_url($cta_bg_image); ?>');">

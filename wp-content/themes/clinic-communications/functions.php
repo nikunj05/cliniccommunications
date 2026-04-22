@@ -319,6 +319,102 @@ function clinic_communications_customize_register( $wp_customize ) {
 			)
 		);
 	}
+
+	// Global CTA Section
+	$wp_customize->add_section(
+		'clinic_communications_global_cta_section',
+		array(
+			'title'    => esc_html__( 'Global CTA Settings', 'clinic-communications' ),
+			'priority' => 32,
+		)
+	);
+
+	// CTA Background Image
+	$wp_customize->add_setting(
+		'clinic_communications_global_cta_bg',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'esc_url_raw',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'clinic_communications_global_cta_bg',
+			array(
+				'label'   => esc_html__( 'CTA Background Image', 'clinic-communications' ),
+				'section' => 'clinic_communications_global_cta_section',
+			)
+		)
+	);
+
+	// CTA Title
+	$wp_customize->add_setting(
+		'clinic_communications_global_cta_title',
+		array(
+			'default'           => 'You’re here for your <span class="font-style-italic">clients</span>.<br> We’re here for your <span class="font-style-italic">content</span>.',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		'clinic_communications_global_cta_title',
+		array(
+			'label'   => esc_html__( 'CTA Title', 'clinic-communications' ),
+			'section' => 'clinic_communications_global_cta_section',
+			'type'    => 'textarea',
+		)
+	);
+
+	// CTA Subtitle
+	$wp_customize->add_setting(
+		'clinic_communications_global_cta_subtitle',
+		array(
+			'default'           => 'Let’s elevate your socials together. Book your complimentary 15-minute call.',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		'clinic_communications_global_cta_subtitle',
+		array(
+			'label'   => esc_html__( 'CTA Subtitle', 'clinic-communications' ),
+			'section' => 'clinic_communications_global_cta_section',
+			'type'    => 'textarea',
+		)
+	);
+
+	// CTA Button Text
+	$wp_customize->add_setting(
+		'clinic_communications_global_cta_btn_text',
+		array(
+			'default'           => 'BOOK NOW',
+			'sanitize_callback' => 'sanitize_text_field',
+		)
+	);
+	$wp_customize->add_control(
+		'clinic_communications_global_cta_btn_text',
+		array(
+			'label'   => esc_html__( 'CTA Button Text', 'clinic-communications' ),
+			'section' => 'clinic_communications_global_cta_section',
+			'type'    => 'text',
+		)
+	);
+
+	// CTA Button Link
+	$wp_customize->add_setting(
+		'clinic_communications_global_cta_btn_link',
+		array(
+			'default'           => '#',
+			'sanitize_callback' => 'esc_url_raw',
+		)
+	);
+	$wp_customize->add_control(
+		'clinic_communications_global_cta_btn_link',
+		array(
+			'label'   => esc_html__( 'CTA Button Link', 'clinic-communications' ),
+			'section' => 'clinic_communications_global_cta_section',
+			'type'    => 'url',
+		)
+	);
 }
 add_action( 'customize_register', 'clinic_communications_customize_register' );
 

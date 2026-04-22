@@ -35,18 +35,18 @@ $process_title = get_field( 'strategy_process_title' );
 $process_steps = get_field( 'strategy_process_steps' );
 
 // CTA Section
-$cta_bg_image = get_field( 'strategy_cta_bg_image' );
-$cta_title = get_field( 'strategy_cta_title' );
-$cta_subtitle = get_field( 'strategy_cta_subtitle' );
-$cta_button_text = get_field( 'strategy_cta_button_text' );
-$cta_button_link = get_field( 'strategy_cta_button_link' );
+$cta_bg_image = get_field( 'strategy_cta_bg_image' ) ?: get_theme_mod( 'clinic_communications_global_cta_bg' );
+$cta_title = get_field( 'strategy_cta_title' ) ?: get_theme_mod( 'clinic_communications_global_cta_title' );
+$cta_subtitle = get_field( 'strategy_cta_subtitle' ) ?: get_theme_mod( 'clinic_communications_global_cta_subtitle' );
+$cta_button_text = get_field( 'strategy_cta_button_text' ) ?: get_theme_mod( 'clinic_communications_global_cta_btn_text' );
+$cta_button_link = get_field( 'strategy_cta_button_link' ) ?: get_theme_mod( 'clinic_communications_global_cta_btn_link' );
 
 // CTA Fallbacks
 if ( ! $cta_bg_image ) {
 	$cta_bg_image = get_template_directory_uri() . '/assets/images/book-demo-bg-image.jpg';
 }
 if ( ! $cta_title ) {
-	$cta_title = '<span class="font-style-italic">Ready</span> to build a <span class="font-style-italic">strategy</span> that actually <span class="font-style-italic">works</span> for your <span class="font-style-italic">business?</span>';
+	$cta_title = 'You’re here for your <span class="font-style-italic">clients</span>.<br> We’re here for your <span class="font-style-italic">content</span>.';
 }
 if ( ! $cta_subtitle ) {
 	$cta_subtitle = 'Let’s elevate your socials together. Book your complimentary 15-minute call.';

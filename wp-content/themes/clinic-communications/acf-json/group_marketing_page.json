@@ -1,0 +1,247 @@
+{
+    "key": "group_marketing_page",
+    "title": "Page: Social Media Marketing",
+    "fields": [
+        {
+            "key": "field_marketing_tab_banner",
+            "label": "Banner",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_marketing_banner_title",
+            "label": "Banner Title",
+            "name": "marketing_banner_title",
+            "type": "text",
+            "instructions": "The title displayed in the banner section.",
+            "default_value": "<span class=\"font-style-italic\"> Social Media </span>"
+        },
+        {
+            "key": "field_marketing_banner_subtitle",
+            "label": "Banner Subtitle",
+            "name": "marketing_banner_subtitle",
+            "type": "text",
+            "instructions": "The subtitle displayed in the banner section.",
+            "default_value": "<span class=\"font-style-italic\">Management</span>"
+        },
+        {
+            "key": "field_marketing_tab_mgmt",
+            "label": "Management Overview",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_marketing_mgmt_title",
+            "label": "Section Title",
+            "name": "marketing_mgmt_title",
+            "type": "text",
+            "default_value": "Social media <span class=\"font-style-italic\">management</span> <span class=\"font-style-italic\">by</span> Clinic Communications"
+        },
+        {
+            "key": "field_marketing_mgmt_image",
+            "label": "Image",
+            "name": "marketing_mgmt_image",
+            "type": "image",
+            "return_format": "url",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_marketing_mgmt_content_top",
+            "label": "Content Top",
+            "name": "marketing_mgmt_content_top",
+            "type": "text",
+            "default_value": "When it comes to socials, we <span class=\"font-style-italic\">get</span> it."
+        },
+        {
+            "key": "field_marketing_mgmt_content_middle",
+            "label": "Content Middle",
+            "name": "marketing_mgmt_content_middle",
+            "type": "text",
+            "default_value": "Does this sound <span class=\"font-style-italic\">familiar</span>?"
+        },
+        {
+            "key": "field_marketing_mgmt_list",
+            "label": "Management List",
+            "name": "marketing_mgmt_list",
+            "type": "repeater",
+            "layout": "table",
+            "button_label": "Add Item",
+            "sub_fields": [
+                {
+                    "key": "field_marketing_mgmt_list_item",
+                    "label": "List Item",
+                    "name": "list_item",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "key": "field_marketing_tab_bva",
+            "label": "Before vs After",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_marketing_bva_title",
+            "label": "Section Title",
+            "name": "marketing_bva_title",
+            "type": "text",
+            "default_value": "<span class=\"font-style-italic\">Before vs After</span>"
+        },
+        {
+            "key": "field_marketing_bva_image",
+            "label": "BvA Image",
+            "name": "marketing_bva_image",
+            "type": "image",
+            "return_format": "url",
+            "preview_size": "large"
+        },
+        {
+            "key": "field_marketing_tab_mission",
+            "label": "Health Mission",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_marketing_mission_title",
+            "label": "Section Title",
+            "name": "marketing_mission_title",
+            "type": "text",
+            "default_value": "Between us, we are on a mission to <span class=\"font-style-italic\">improve</span> health literacy."
+        },
+        {
+            "key": "field_marketing_mission_description",
+            "label": "Description",
+            "name": "marketing_mission_description",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "We believe that your platform can be used as a reliable source of health information. With Clinic Communications by your side, you can forget trying to come up with content plans and actually have your ideas come to life (whilst looking on brand, of course)."
+        },
+        {
+            "key": "field_marketing_mission_image",
+            "label": "Image",
+            "name": "marketing_mission_image",
+            "type": "image",
+            "return_format": "url",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_marketing_tab_highlights",
+            "label": "Strategy Highlights",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_marketing_highlights",
+            "label": "Highlights",
+            "name": "marketing_highlights",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Add Highlight",
+            "sub_fields": [
+                {
+                    "key": "field_marketing_highlight_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text"
+                },
+                {
+                    "key": "field_marketing_highlight_description",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "wysiwyg",
+                    "toolbar": "basic",
+                    "media_upload": 0
+                },
+                {
+                    "key": "field_marketing_highlight_image",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "url",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_marketing_highlight_reverse",
+                    "label": "Reverse Layout?",
+                    "name": "reverse",
+                    "type": "true_false",
+                    "ui": 1
+                }
+            ]
+        },
+        {
+            "key": "field_marketing_tab_cta",
+            "label": "CTA Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_marketing_cta_bg",
+            "label": "Background Image",
+            "name": "marketing_cta_bg",
+            "type": "image",
+            "return_format": "url",
+            "preview_size": "large"
+        },
+        {
+            "key": "field_marketing_cta_title",
+            "label": "Title",
+            "name": "marketing_cta_title",
+            "type": "textarea",
+            "default_value": "You’re here for your <span class=\"font-style-italic\">clients</span>.\r\nWe’re here for your <span class=\"font-style-italic\">content</span>."
+        },
+        {
+            "key": "field_marketing_cta_desc",
+            "label": "Description",
+            "name": "marketing_cta_desc",
+            "type": "text",
+            "default_value": "Let’s elevate your socials together. Book your complimentary 15-minute call."
+        },
+        {
+            "key": "field_marketing_cta_btn_text",
+            "label": "Button Text",
+            "name": "marketing_cta_btn_text",
+            "type": "text",
+            "default_value": "BOOK NOW"
+        },
+        {
+            "key": "field_marketing_cta_btn_link",
+            "label": "Button Link",
+            "name": "marketing_cta_btn_link",
+            "type": "text",
+            "default_value": "#"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-social-media-marketing.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}
