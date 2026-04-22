@@ -451,3 +451,5 @@ add_filter('upload_mimes', 'allow_svg_uploads');
 add_filter('wpcf7_form_class_attr', function($class) {
     return $class . ' form-fields';
 });
+
+add_filter('wpcf7_autop_or_not', '__return_false');
