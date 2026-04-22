@@ -448,3 +448,6 @@ function allow_svg_uploads($mimes) {
 add_filter('upload_mimes', 'allow_svg_uploads');
 
 
+add_filter('wpcf7_form_class_attr', function($class) {
+    return $class . ' form-fields';
+});
