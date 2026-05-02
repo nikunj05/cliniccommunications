@@ -1,0 +1,537 @@
+{
+    "key": "group_landing_page",
+    "title": "Landing Page Settings",
+    "fields": [
+        {
+            "key": "field_hero_tab",
+            "label": "Hero Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_hero_subheading",
+            "label": "Hero Subheading",
+            "name": "hero_subheading",
+            "type": "text"
+        },
+        {
+            "key": "field_hero_heading",
+            "label": "Hero Heading",
+            "name": "hero_heading",
+            "type": "text"
+        },
+        {
+            "key": "field_hero_description",
+            "label": "Hero Description",
+            "name": "hero_description",
+            "type": "textarea"
+        },
+        {
+            "key": "field_hero_btn_1_text",
+            "label": "Hero Button 1 Text",
+            "name": "hero_btn_1_text",
+            "type": "text"
+        },
+        {
+            "key": "field_hero_btn_1_link",
+            "label": "Hero Button 1 Link",
+            "name": "hero_btn_1_link",
+            "type": "url"
+        },
+        {
+            "key": "field_hero_btn_2_text",
+            "label": "Hero Button 2 Text",
+            "name": "hero_btn_2_text",
+            "type": "text"
+        },
+        {
+            "key": "field_hero_btn_2_link",
+            "label": "Hero Button 2 Link",
+            "name": "hero_btn_2_link",
+            "type": "url"
+        },
+        {
+            "key": "field_hero_image",
+            "label": "Hero Image",
+            "name": "hero_image",
+            "type": "image",
+            "return_format": "url"
+        },
+        {
+            "key": "field_trusted_tab",
+            "label": "Trusted Practices",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_trusted_heading",
+            "label": "Trusted Heading",
+            "name": "trusted_heading",
+            "type": "text"
+        },
+        {
+            "key": "field_trusted_logos",
+            "label": "Trusted Logos",
+            "name": "trusted_logos",
+            "type": "repeater",
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_trusted_logos_text",
+                    "label": "Logo Text",
+                    "name": "logo_text",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "key": "field_landscape_tab",
+            "label": "Landscape",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_landscape_subheading",
+            "label": "Landscape Subheading",
+            "name": "landscape_subheading",
+            "type": "text"
+        },
+        {
+            "key": "field_landscape_heading",
+            "label": "Landscape Heading",
+            "name": "landscape_heading",
+            "type": "text"
+        },
+        {
+            "key": "field_landscape_description",
+            "label": "Landscape Description",
+            "name": "landscape_description",
+            "type": "textarea"
+        },
+        {
+            "key": "field_landscape_cards",
+            "label": "Landscape Cards",
+            "name": "landscape_cards",
+            "type": "repeater",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_landscape_cards_icon",
+                    "label": "Icon",
+                    "name": "icon",
+                    "type": "image",
+                    "return_format": "url"
+                },
+                {
+                    "key": "field_landscape_cards_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text"
+                },
+                {
+                    "key": "field_landscape_cards_desc",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "textarea"
+                }
+            ]
+        },
+        {
+            "key": "field_solutions_tab",
+            "label": "Solutions",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_solutions_subheading",
+            "label": "Solutions Subheading",
+            "name": "solutions_subheading",
+            "type": "text"
+        },
+        {
+            "key": "field_solutions_heading",
+            "label": "Solutions Heading",
+            "name": "solutions_heading",
+            "type": "text"
+        },
+        {
+            "key": "field_solutions_features",
+            "label": "Solutions Features",
+            "name": "solutions_features",
+            "type": "repeater",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_solutions_features_icon",
+                    "label": "Icon",
+                    "name": "icon",
+                    "type": "image",
+                    "return_format": "url"
+                },
+                {
+                    "key": "field_solutions_features_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text"
+                },
+                {
+                    "key": "field_solutions_features_desc",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "textarea"
+                }
+            ]
+        },
+        {
+            "key": "field_solutions_image",
+            "label": "Solutions Image",
+            "name": "solutions_image",
+            "type": "image",
+            "return_format": "url"
+        },
+        {
+            "key": "field_solutions_testimonial",
+            "label": "Testimonial",
+            "name": "solutions_testimonial",
+            "type": "textarea"
+        },
+        {
+            "key": "field_solutions_author",
+            "label": "Testimonial Author",
+            "name": "solutions_author",
+            "type": "text"
+        },
+        {
+            "key": "field_case_study_tab",
+            "label": "Case Study",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_case_study_subheading",
+            "label": "Subheading",
+            "name": "case_study_subheading",
+            "type": "text"
+        },
+        {
+            "key": "field_case_study_heading",
+            "label": "Heading",
+            "name": "case_study_heading",
+            "type": "text"
+        },
+        {
+            "key": "field_case_study_description",
+            "label": "Description",
+            "name": "case_study_description",
+            "type": "textarea"
+        },
+        {
+            "key": "field_case_study_stats",
+            "label": "Stats",
+            "name": "case_study_stats",
+            "type": "repeater",
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_case_study_stats_number",
+                    "label": "Number",
+                    "name": "number",
+                    "type": "text"
+                },
+                {
+                    "key": "field_case_study_stats_text",
+                    "label": "Text",
+                    "name": "text",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "key": "field_case_study_link_text",
+            "label": "Link Text",
+            "name": "case_study_link_text",
+            "type": "text"
+        },
+        {
+            "key": "field_case_study_link_url",
+            "label": "Link URL",
+            "name": "case_study_link_url",
+            "type": "url"
+        },
+        {
+            "key": "field_case_study_image",
+            "label": "Image",
+            "name": "case_study_image",
+            "type": "image",
+            "return_format": "url"
+        },
+        {
+            "key": "field_methodology_tab",
+            "label": "Methodology",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_methodology_heading",
+            "label": "Heading",
+            "name": "methodology_heading",
+            "type": "text"
+        },
+        {
+            "key": "field_methodology_subheading",
+            "label": "Subheading",
+            "name": "methodology_subheading",
+            "type": "textarea"
+        },
+        {
+            "key": "field_methodology_steps",
+            "label": "Steps",
+            "name": "methodology_steps",
+            "type": "repeater",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_methodology_steps_num",
+                    "label": "Number",
+                    "name": "number",
+                    "type": "text"
+                },
+                {
+                    "key": "field_methodology_steps_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text"
+                },
+                {
+                    "key": "field_methodology_steps_desc",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "textarea"
+                }
+            ]
+        },
+        {
+            "key": "field_philosophy_tab",
+            "label": "Philosophy",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_philosophy_image",
+            "label": "Image",
+            "name": "philosophy_image",
+            "type": "image",
+            "return_format": "url"
+        },
+        {
+            "key": "field_philosophy_subheading",
+            "label": "Subheading",
+            "name": "philosophy_subheading",
+            "type": "text"
+        },
+        {
+            "key": "field_philosophy_heading",
+            "label": "Heading",
+            "name": "philosophy_heading",
+            "type": "text"
+        },
+        {
+            "key": "field_philosophy_content_1",
+            "label": "Content Paragraph 1",
+            "name": "philosophy_content_1",
+            "type": "textarea"
+        },
+        {
+            "key": "field_philosophy_content_2",
+            "label": "Content Paragraph 2",
+            "name": "philosophy_content_2",
+            "type": "textarea"
+        },
+        {
+            "key": "field_philosophy_author_name",
+            "label": "Author Name",
+            "name": "philosophy_author_name",
+            "type": "text"
+        },
+        {
+            "key": "field_philosophy_author_title",
+            "label": "Author Title",
+            "name": "philosophy_author_title",
+            "type": "text"
+        },
+        {
+            "key": "field_field_notes_tab",
+            "label": "Field Notes",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_field_notes_subheading",
+            "label": "Subheading",
+            "name": "field_notes_subheading",
+            "type": "text"
+        },
+        {
+            "key": "field_field_notes_heading",
+            "label": "Heading",
+            "name": "field_notes_heading",
+            "type": "text"
+        },
+        {
+            "key": "field_field_notes_left_desc",
+            "label": "Left Description",
+            "name": "field_notes_left_desc",
+            "type": "textarea"
+        },
+        {
+            "key": "field_field_notes_right_desc_1",
+            "label": "Right Description 1",
+            "name": "field_notes_right_desc_1",
+            "type": "textarea"
+        },
+        {
+            "key": "field_field_notes_right_desc_2",
+            "label": "Right Description 2",
+            "name": "field_notes_right_desc_2",
+            "type": "textarea"
+        },
+        {
+            "key": "field_field_notes_cards",
+            "label": "Cards",
+            "name": "field_notes_cards",
+            "type": "repeater",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_field_notes_cards_tag",
+                    "label": "Tag",
+                    "name": "tag",
+                    "type": "text"
+                },
+                {
+                    "key": "field_field_notes_cards_num",
+                    "label": "Number",
+                    "name": "number",
+                    "type": "text"
+                },
+                {
+                    "key": "field_field_notes_cards_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text"
+                },
+                {
+                    "key": "field_field_notes_cards_desc",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "textarea"
+                }
+            ]
+        },
+        {
+            "key": "field_field_notes_stats",
+            "label": "Stats",
+            "name": "field_notes_stats",
+            "type": "repeater",
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_field_notes_stats_num",
+                    "label": "Number",
+                    "name": "number",
+                    "type": "text"
+                },
+                {
+                    "key": "field_field_notes_stats_text",
+                    "label": "Text",
+                    "name": "text",
+                    "type": "textarea"
+                }
+            ]
+        },
+        {
+            "key": "field_faq_tab",
+            "label": "FAQ",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_faq_title",
+            "label": "Title",
+            "name": "faq_title",
+            "type": "text"
+        },
+        {
+            "key": "field_faqs",
+            "label": "FAQs",
+            "name": "faqs",
+            "type": "repeater",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_faqs_question",
+                    "label": "Question",
+                    "name": "question",
+                    "type": "text"
+                },
+                {
+                    "key": "field_faqs_answer",
+                    "label": "Answer",
+                    "name": "answer",
+                    "type": "wysiwyg"
+                }
+            ]
+        },
+        {
+            "key": "field_elevate_tab",
+            "label": "Ready to Elevate",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_elevate_heading",
+            "label": "Heading",
+            "name": "elevate_heading",
+            "type": "text"
+        },
+        {
+            "key": "field_elevate_description",
+            "label": "Description",
+            "name": "elevate_description",
+            "type": "textarea"
+        },
+        {
+            "key": "field_elevate_btn_text",
+            "label": "Button Text",
+            "name": "elevate_btn_text",
+            "type": "text"
+        },
+        {
+            "key": "field_elevate_btn_link",
+            "label": "Button Link",
+            "name": "elevate_btn_link",
+            "type": "url"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-landing-page.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1700000000
+}
