@@ -2560,7 +2560,7 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   padding-bottom: 80px;
   font-weight: 500;
   text-align: left;
-  max-width: 672px;
+  max-width: 680px;
   margin: 0px;
 }
 .solutions-section .solutions-features {
@@ -2890,7 +2890,6 @@ footer .footer-bottom .footer-acknowledgement .ack-text:last-child {
   color: rgba(26, 26, 26, 0.7019607843);
   line-height: 1.6;
   font-weight: 300;
-  margin-bottom: 40px;
 }
 .field-notes-section p:last-child {
   margin-bottom: 0;

@@ -75,7 +75,7 @@ define( 'NONCE_SALT',       '401ac45d045d94726e6d5e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6
  *
  * @link https://developer.wordpress.org/advanced-administration/wordpress/wp-config/#table-prefix
  */
-$table_prefix = 'wp_';
+$table_prefix = 'cswp2026_';
 
 /**
  * For developers: WordPress debugging mode.

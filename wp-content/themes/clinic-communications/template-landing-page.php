@@ -54,7 +54,7 @@ $philosophy_image = get_field('philosophy_image') ?: get_template_directory_uri(
 $philosophy_subheading = get_field('philosophy_subheading') ?: 'PHILOSOPHY';
 $philosophy_heading = get_field('philosophy_heading') ?: '"Dentistry is built on trust. Your marketing should be too."';
 $philosophy_content_1 = get_field('philosophy_content_1') ?: 'When we started Clinic Communications, we noticed a disconnect. Dental practices are clinical, precise, and deeply ethical. Yet the marketing agencies serving them were loud, aggressive, and focused on vanity metrics.';
-$philosophy_content_2 = get_field('philosophy_content_2') ?: 'We believe that premium practices deserve premium marketing. You shouldn\'t have to choose between growing your revenue and maintaining your professional integrity. We build elegant systems that attract patients who value your expertise, not just your price point.';
+$philosophy_content_2 = get_field('philosophy_content_2') ?: '';
 $philosophy_author_name = get_field('philosophy_author_name') ?: 'Sarah Jenkins';
 $philosophy_author_title = get_field('philosophy_author_title') ?: 'FOUNDER, CLINIC COMMUNICATIONS';
 
@@ -63,7 +63,7 @@ $field_notes_subheading = get_field('field_notes_subheading') ?: 'FIELD NOTES';
 $field_notes_heading = get_field('field_notes_heading') ?: 'Marketing for dentists, <span class="font-style-italic">done with care.</span>';
 $field_notes_left_desc = get_field('field_notes_left_desc') ?: 'Dentistry is one of the most trust-driven industries in healthcare. Patients aren\'t choosing between products on a shelf — they\'re choosing who gets to look inside their mouth, numb their face, and place restorations they\'ll live with for decades. That changes everything about how a practice should communicate.';
 $field_notes_right_desc_1 = get_field('field_notes_right_desc_1') ?: 'Most agencies treat dental practices like generic small businesses — running discount offers, chasing keyword volume, and measuring success in clicks. The result is predictable: a flood of price-sensitive enquiries for $99 cleans, no growth in implants or aligners, and a front desk burnt out on tyre-kickers.';
-$field_notes_right_desc_2 = get_field('field_notes_right_desc_2') ?: 'We take a different view. Patient acquisition for a modern practice is really three problems: being found by the right person at the right moment, earning their trust before they ever pick up the phone, and giving the team a calm, considered system that converts enquiries into booked, ready-to-treat appointments. Get those three right and growth stops feeling like a hustle.';
+$field_notes_right_desc_2 = get_field('field_notes_right_desc_2') ?: '';
 $field_notes_cards = get_field('field_notes_cards');
 $field_notes_stats = get_field('field_notes_stats');
 
